@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Daniel Ruf - Medienkompetenz</title>
+<link rel="stylesheet" href="reset.css" type="text/css">
+<link rel="stylesheet" href="stylesheet.css" type="text/css" />
+<script type="text/javascript" src="https://raw.github.com/Modernizr/Modernizr/master/modernizr.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://raw.github.com/jeresig/jquery.hotkeys/master/jquery.hotkeys.js"></script>
+
+<style type="text/css" media="screen">
+.line {height:20px; margin:0px; width: 1200px; border-radius:2px; background: #499bea; /* old browsers */ background: -moz-linear-gradient(top, #499bea 0%, #207ce5 100%); /* firefox */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5)); /* webkit */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* ie */ -webkit-box-shadow: 0px 2px 3px #555; /* webkit browser*/ -moz-box-shadow:  0px 2px 3px #555; /* firefox */ box-shadow:  0px 2px 3px #555; }
+.line2 {width: 550px; position: relative; height: 10px; left: 50%; margin-left: -275px; border:0px solid #fff; border-radius:2px; background: #499bea; /* old browsers */  background: -moz-linear-gradient(top, #499bea 0%, #207ce5 100%); /* firefox */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5)); /* webkit */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* ie */ -webkit-box-shadow: 0px 2px 3px #555; /* webkit browser*/ -moz-box-shadow:  0px 2px 3px #555; /* firefox */ box-shadow:  0px 2px 3px #555; }
+.fontface2 {font: 62px 'CaviarDreamsRegular', Arial, sans-serif; letter-spacing: 0; text-transform:uppercase; color: #222; text-shadow: 0px 2px 3px #555;}
+.fontface1 {font: 110px 'CaviarDreamsRegular', Arial, sans-serif; letter-spacing: 0; text-transform:uppercase; color: #222; text-shadow: 0px 2px 3px #555;}
+.fontface4 {font: 30px 'LatoBold', Arial, sans-serif; letter-spacing: 0; text-transform:uppercase; color: #222; text-shadow: 0px 2px 3px #555;}
+body {background-image:url('bg.png');}
+#container {width: 1200px; height: 700px; margin-left: auto; margin-right:auto;  border:0px solid #fff;}
+
+</style>
+</head>
+
+<body>
+
+<div id="container" style=" border:0px solid #ffffff; width:1200px;">
+
+<div style="text-align:center; width:1200px;">
+<!-- head -->
+<div style="height:100px;"></div>
+<div class="fontface1" id="title">Daniel Ruf</div>
+<div class="line2"></div>
+<div style="height:10px;"></div>
+<div class="fontface2" id="text">Medienkompetenz</div></div>
+
+<!-- nav -->
+<br/><br/><br/>	
+<div style="text-align:center; border:0px solid #ffffff;" class="fontface4 " id="nav"></div>
+<div class="line"></div><br/>	
+
+<!-- content -->
+<div style="width:1200px; margin-right:auto; margin-left:auto;">
+<div style="float:left; text-align:left; border:0px solid #ffffff; width:500px; padding:10px;" class="fontface4 " id="content"></div>
+<div style="float:right; text-align:right; border:0px solid #ffffff; width:500px; padding:10px;" class="fontface4 " id="content2"></div>
+</div>
+
+<div style="text-align:center; width:1200px; clear:both; border:0px solid #ffffff;" class="fontface4 " id="footer">Bitte aktiviere Javascript</div><br/><br/>
+<div style="text-align:center; width:1200px; clear:both; border:0px solid #ffffff;" class="fontface4 " id="end"></div><br/><br/>
+
+<!-- container -->
+</div>
+
+<script type="text/javascript">
+if (navigator.language) {
+var language = navigator.language;
+}
+else if (navigator.userLanguage)
+{var language = navigator.userLanguage;}
+if (language == "de" || language == "de-DE")
+{var language_code ="de";}
+else {
+var language_code ="en";}
+var language_file = "content."+language_code+".html";
+if (Modernizr.audio) {
+var audio = new Audio();
+audio.src = Modernizr.audio.ogg ? 'http://daniel-ruf.de/click.ogg' :
+                 Modernizr.audio.mp3 ? 'http://daniel-ruf.de/click.mp3' :
+				 '';
+audio.play();
+}
+//hover code
+$("div#title").hide();
+$("div#text").hide();
+//load index page, nav ...
+$("div#nav").load(""+language_file+" div#index");
+$("div#footer").load(""+language_file+" div#index2");
+$("div#nav").hide();
+$("div#footer").hide();
+$("#text").css("height","0px");
+$(".line").css("width","0px");
+$(".line2").css("width","0px");
+$(document).ready(function() {
+// Handler for .ready() called.
+
+$("#title").fadeIn(2000);
+$.when( $("#title") ).done(function( elements ) {
+$(".line2").animate({width: "550px"}, 1000); 
+$.when( $(".line2") ).done(function( elements ) {
+$("#text").show();
+$("#text").animate({height: "100px"}, 1500);
+$.when( $("#text") ).done(function( elements ) {
+$("#nav").fadeIn(1000 );
+$.when( $("#nav") ).done(function( elements ) {
+$(".line").animate({width: "1200px"}, 1500 );
+$.when( $(".line") ).done(function( elements ) {
+$("#footer").fadeIn(1000);
+
+$(document).bind('keypress', 'e',function (evt){$("div#content2").load(""+language_file+" div#email_content"); $("div#content").load(""+language_file+" div#kontakt"); $("div#footer").load(""+language_file+" div#empty"); return false; });
+$(document).bind('keypress', 'k',function (evt){$("div#content").load(""+language_file+" div#kontakt"); $("div#content2").load(""+language_file+" div#empty"); $("div#footer").load(""+language_file+" div#empty"); return false; });
+$(document).bind('keypress', 'l',function (evt){$("div#content").load(""+language_file+" div#leistungen"); $("div#content2").load(""+language_file+" div#empty"); $("div#footer").load(""+language_file+" div#empty"); return false; });
+
+$(".fontface4 span").live('mouseover mouseout', function(event) {
+if (event.type == 'mouseover'){
+$(this).css({'color': '#555', 'text-shadow': '0px -2px 3px #222', 'cursor':'pointer'});
+} 
+else {
+$(this).css({'color': '#222', 'text-shadow': '0px 2px 3px #555'});
+}
+});
+
+//this is all where the magic happens, in just 7 lines =)
+$("span").live('click', function() {
+var currentId = $(this).attr('id');
+if (currentId.indexOf("_content") >= 0) {
+$("div#content2").load(""+language_file+" div#"+currentId+"");}
+else { 
+$("div#content").load(""+language_file+" div#"+currentId+"");
+$("div#content2").load(""+language_file+" div#empty"); $("div#footer").load(""+language_file+" div#empty");} 
+});
+});
+});
+});
+});
+});
+});
+</script>
+</body>
+</html>

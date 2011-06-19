@@ -1,0 +1,1 @@
+Create your own small dynamic portfolio based on this project
