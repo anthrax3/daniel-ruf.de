@@ -1,0 +1,41 @@
+{
+	"id": "file",
+	"footer": "HERZLICH WILLKOMMEN AUF DANIEL-RUF.DE",
+	"_nav": {
+		"about": {
+			"left": "ÜBER MICH", "id": "about",
+			"_content": {
+				"lebenslauf": {"id": "lebenslauf", "left": "LEBENSLAUF", "right": "IN VORBEREITUNG"}
+			}
+		},
+		"leistungen": {
+			"left": "LEISTUNGEN", "id": "leistungen", 
+			"_content": {
+				"webdev": {"id": "webdev", "left": "WEBENTWICKLUNG", "right": "WEBENTWICKLUNG<br/><br/>PHP, OOP, MYSQL, CSS3, HTML5, AJAX, JQUERY, PROCESSING, DRUPAL, WORDPRESS, TYPO3, CONTAO, RUBY ON RAILS" },
+				"grafik": {"id": "grafik", "left": "GRAFIKDESIGN", "right": "GRAFIKDESIGN<br/><br/>PHOTOSHOP, INDESIGN, FLASH, ILLUSTRATOR, DRUCK, POSTER, FLYER, TEXTE"},
+				"webdesign": {"id": "webdesign", "left": "WEBDESIGN", "right": "WEBDESIGN<br/><br/>FLASH, PHOTOSHOP"},
+				"gamedesign": {"id": "gamedesign", "left": "GAMEDESIGN", "right": "GAMEDESIGN<br/><br/>UDK, UNITY3D, BLENDER"},
+				"sounddesign": {"id": "sounddesign", "left": "SOUNDDESIGN", "right": "SOUNDDESIGN<br/><br/>FRUITY LOOPS, CUBASE"},
+				"illustration": {"id": "illustration", "left": "ILLUSTRATION", "right": "ILLUSTRATION<br/><br/>WACOM, PHOTOSHOP, INDESIGN, FLYER, POSTER"},
+				"crossmedia": {"id": "crossmedia", "left": "CROSSMEDIA", "right": "CROSSMEDIA<br/><br/>PROCESSING, JQUERY, AUGMENTED REALITY"},
+				"gamedev": {"id": "gamedev", "left": "GAMEDEVELOPMENT", "right": "GAMEDEVELOPEMENT<br/><br/>UDK, UNITY3D"},
+				"appdev": {"id": "appdev", "left": "APPENTWICKLUNG", "right": "APPENTWICKLUNG<br/><br/>OBJECTIVE C, XCODE, QT, COCOA"},
+				"outsource": {"id": "outsource", "left": "OUTSOURCING", "right": "OUTSOURCING<br/><br/><div class=\"highlight\">2</div> AGENTUREN,<br/><div class=\"highlight\">2</div> MEDIENGESTALTER,<br/><div class=\"highlight\">2</div> GRAFIKDESIGNER,<br/><div class=\"highlight\">3</div> ILLUSTRATORIN, <br/>..."}
+			}
+		},
+		"projekte": {
+			"left": "PROJEKTE", "id": "projekte", 
+			"_content": {
+				"x3dmodels": {"id": "x3dmodels", "left": "X3DMODELS.COM", "right":"AKTUELLES PROJEKT VON MIR"}
+			}
+		},
+		"impressum": {
+			"left": "IMPRESSUM", "id": "impressum", 
+			"_content": {
+				"adresse": {"id": "adresse", "left": "ADRESSE", "right": "DANIEL RUF<br/>OTZBERGRING 27<br/>64846 GROSS-ZIMMERN" },
+				"email": {"id": "email", "left": "EMAIL", "right": "KONTAKT@DANIEL-RUF.DE"},
+				"telefon": {"id": "telefon", "left": "TELEFON", "right": "0176 69 112 848 (MOBIL)"}
+			}
+		}
+	}
+}
