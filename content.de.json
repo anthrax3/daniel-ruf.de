@@ -19,7 +19,7 @@
 				"illustration": {"id": "illustration", "left": "ILLUSTRATION", "right": "ILLUSTRATION<br/><br/>WACOM, PHOTOSHOP, INDESIGN, FLYER, POSTER"},
 				"crossmedia": {"id": "crossmedia", "left": "CROSSMEDIA", "right": "CROSSMEDIA<br/><br/>PROCESSING, JQUERY, AUGMENTED REALITY"},
 				"gamedev": {"id": "gamedev", "left": "GAMEDEVELOPMENT", "right": "GAMEDEVELOPEMENT<br/><br/>UDK, UNITY3D"},
-				"appdev": {"id": "appdev", "left": "APPENTWICKLUNG", "right": "APPENTWICKLUNG<br/><br/>OBJECTIVE C, XCODE, QT, COCOA"},
+				"appdev": {"id": "appdev", "left": "APPENTWICKLUNG", "right": "APPENTWICKLUNG<br/><br/>OBJECTIVE C, XCODE, QT, COCOA, C#"},
 				"outsource": {"id": "outsource", "left": "OUTSOURCING", "right": "OUTSOURCING<br/><br/><div class=\"highlight\">2</div> AGENTUREN,<br/><div class=\"highlight\">2</div> MEDIENGESTALTER,<br/><div class=\"highlight\">2</div> GRAFIKDESIGNER,<br/><div class=\"highlight\">3</div> ILLUSTRATOREN, <br/>..."}
 			}
 		},
