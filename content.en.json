@@ -1,32 +1,33 @@
 {
 	"id": "file",
-	"footer": "HERZLICH WILLKOMMEN AUF DANIEL-RUF.DE",
+	"footer": "WELCOME ON DANIEL-RUF.DE",
 	"_nav": {
 		"about": {
-			"left": "ÜBER MICH", "id": "about",
+			"left": "ABOUT ME", "id": "about",
 			"_content": {
-				"lebenslauf": {"id": "lebenslauf", "left": "LEBENSLAUF", "right": "IN VORBEREITUNG"}
+				"schulbildung": {"id": "schulbildung", "left": "SCHULBILDUNG", "right": "SCHULBILDUNG<br/><div class=\"highlight\">08/1997 - 07/2001</div><br/>Grundschule \"Friedensschule\" in Groß-Zimmern<br/><br/><div class=\"highlight\">08/2001 - 07/2007</div><br/>Gymnasialer Zweig der Gesamtschule \"Albert-Schweitzer-Schule\" in Groß-Zimmern<br/><br/><div class=\"highlight\">08/2007 - 06/2010</div><br/>Berufliches Gymnasium \"Landrat-Gruber-Schule\" in Dieburg<br/>Fachrichtung Datenverarbeitungstechnik / Elektrotechnik<br/><br/><div class=\"highlight\">11.6.2010</div><br/>Allgemeine Hochschulreife (Abitur)<br/><br/><div class=\"highlight\">1.9.2011 - 30.8.2014</div><br/>Ausbildung zum Mediengestalter Fachrichtung \"Gestaltung und Technik\" an der \"Johannes-Gutenberg-Schule\" in Heidelberg<br/>"},
+				"praktika": {"id": "praktika", "left": "PRAKTIKA", "right": "PRAKTIKA<br/><div class=\"highlight\">28.6.2010  - 15.10.2010</div><br/><div class=\"highlight\">Frankfurter Allgemeine Zeitung</div> in Frankfurt in der Verlagsproduktion<br/><br/><div class=\"highlight\">01.11.2010 - 30.4.2011</div><br/><div class=\"highlight\">Sonnenberg & Holsmölle GmbH</div> in Darmstadt<br/><br/><div class=\"highlight\">01.05.2011 - 30.8.2011</div><br/><div class=\"highlight\">Cortona Werbeagentur</div> in Weinheim mit anschließender Ausbildung"}
 			}
 		},
 		"leistungen": {
-			"left": "LEISTUNGEN", "id": "leistungen", 
+			"left": "SERVICES", "id": "leistungen", 
 			"_content": {
-				"webdev": {"id": "webdev", "left": "WEBENTWICKLUNG", "right": "WEBENTWICKLUNG<br/><br/>PHP, OOP, MYSQL, CSS3, HTML5, AJAX, JQUERY, PROCESSING, DRUPAL, WORDPRESS, TYPO3, CONTAO, RUBY ON RAILS" },
-				"grafik": {"id": "grafik", "left": "GRAFIKDESIGN", "right": "GRAFIKDESIGN<br/><br/>PHOTOSHOP, INDESIGN, FLASH, ILLUSTRATOR, DRUCK, POSTER, FLYER, TEXTE"},
+				"webdev": {"id": "webdev", "left": "WEBDEVELOPMENT", "right": "WEBENTWICKLUNG<br/><br/>PHP, OOP, MYSQL, CSS3, HTML5, AJAX, JQUERY, PROCESSING, DRUPAL, WORDPRESS, TYPO3, CONTAO, RUBY ON RAILS" },
+				"grafik": {"id": "grafik", "left": "GRAPHICDESIGN", "right": "GRAFIKDESIGN<br/><br/>PHOTOSHOP, INDESIGN, FLASH, ILLUSTRATOR, DRUCK, POSTER, FLYER, TEXTE"},
 				"webdesign": {"id": "webdesign", "left": "WEBDESIGN", "right": "WEBDESIGN<br/><br/>FLASH, PHOTOSHOP"},
 				"gamedesign": {"id": "gamedesign", "left": "GAMEDESIGN", "right": "GAMEDESIGN<br/><br/>UDK, UNITY3D, BLENDER"},
 				"sounddesign": {"id": "sounddesign", "left": "SOUNDDESIGN", "right": "SOUNDDESIGN<br/><br/>FRUITY LOOPS, CUBASE"},
 				"illustration": {"id": "illustration", "left": "ILLUSTRATION", "right": "ILLUSTRATION<br/><br/>WACOM, PHOTOSHOP, INDESIGN, FLYER, POSTER"},
 				"crossmedia": {"id": "crossmedia", "left": "CROSSMEDIA", "right": "CROSSMEDIA<br/><br/>PROCESSING, JQUERY, AUGMENTED REALITY"},
 				"gamedev": {"id": "gamedev", "left": "GAMEDEVELOPMENT", "right": "GAMEDEVELOPEMENT<br/><br/>UDK, UNITY3D"},
-				"appdev": {"id": "appdev", "left": "APPENTWICKLUNG", "right": "APPENTWICKLUNG<br/><br/>OBJECTIVE C, XCODE, QT, COCOA, C#"},
+				"appdev": {"id": "appdev", "left": "APPDEVELOPMENT", "right": "APPENTWICKLUNG<br/><br/>OBJECTIVE C, XCODE, QT, COCOA, C#"},
 				"outsource": {"id": "outsource", "left": "OUTSOURCING", "right": "OUTSOURCING<br/><br/><div class=\"highlight\">2</div> AGENTUREN,<br/><div class=\"highlight\">2</div> MEDIENGESTALTER,<br/><div class=\"highlight\">2</div> GRAFIKDESIGNER,<br/><div class=\"highlight\">3</div> ILLUSTRATOREN, <br/>..."}
 			}
 		},
 		"projekte": {
-			"left": "PROJEKTE", "id": "projekte", 
+			"left": "PROJECTS", "id": "projekte", 
 			"_content": {
-				"x3dmodels": {"id": "x3dmodels", "left": "X3DMODELS.COM", "right":"AKTUELLES PROJEKT VON MIR"}
+				"x3dmodels": {"id": "x3dmodels", "left": "X3DMODELS.COM", "right":"MY LATEST PROJECT"}
 			}
 		},
 		"impressum": {

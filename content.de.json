@@ -5,7 +5,8 @@
 		"about": {
 			"left": "ÜBER MICH", "id": "about",
 			"_content": {
-				"lebenslauf": {"id": "lebenslauf", "left": "LEBENSLAUF", "right": "IN VORBEREITUNG"}
+				"schulbildung": {"id": "schulbildung", "left": "SCHULBILDUNG", "right": "SCHULBILDUNG<br/><div class=\"highlight\">08/1997 - 07/2001</div><br/>Grundschule \"Friedensschule\" in Groß-Zimmern<br/><br/><div class=\"highlight\">08/2001 - 07/2007</div><br/>Gymnasialer Zweig der Gesamtschule \"Albert-Schweitzer-Schule\" in Groß-Zimmern<br/><br/><div class=\"highlight\">08/2007 - 06/2010</div><br/>Berufliches Gymnasium \"Landrat-Gruber-Schule\" in Dieburg<br/>Fachrichtung Datenverarbeitungstechnik / Elektrotechnik<br/><br/><div class=\"highlight\">11.6.2010</div><br/>Allgemeine Hochschulreife (Abitur)<br/><br/><div class=\"highlight\">1.9.2011 - 30.8.2014</div><br/>Ausbildung zum Mediengestalter Fachrichtung \"Gestaltung und Technik\" an der \"Johannes-Gutenberg-Schule\" in Heidelberg<br/>"},
+				"praktika": {"id": "praktika", "left": "PRAKTIKA", "right": "PRAKTIKA<br/><div class=\"highlight\">28.6.2010  - 15.10.2010</div><br/><div class=\"highlight\">Frankfurter Allgemeine Zeitung</div> in Frankfurt in der Verlagsproduktion<br/><br/><div class=\"highlight\">01.11.2010 - 30.4.2011</div><br/><div class=\"highlight\">Sonnenberg & Holsmölle GmbH</div> in Darmstadt<br/><br/><div class=\"highlight\">01.05.2011 - 30.8.2011</div><br/><div class=\"highlight\">Cortona Werbeagentur</div> in Weinheim mit anschließender Ausbildung"}
 			}
 		},
 		"leistungen": {
