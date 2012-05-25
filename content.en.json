@@ -24,10 +24,13 @@
 				"consulting": {"id": "consulting", "left": "CONSULTING", "right": "CONSULTING<br/><br/>IT-CONSULTING, BUSINESS CONSULTING, PROJECTMANAGEMENT, COACHING, STRATEGY CONSULTING"}
 			}
 		},
-		"projekte": {
-			"left": "PROJECTS", "id": "projekte", 
+		"referenzen": {
+			"left": "REFERENZEN", "id": "referenzen", 
 			"_content": {
-				"x3dmodels": {"id": "x3dmodels", "left": "X3DMODELS.COM", "right":"MY LATEST PROJECT"}
+				"alig": {"id": "alig", "left": "ALIG-BERATUNG.CH", "right":"INSTALLATION OF JOOMLA, A JOOMLA THEME AND SOME EXTENSIONS<br/><a href=\"http://alig-beratung.ch\" target=\"_blank\">ALIG-BERATUNG.CH</a>"},
+				"gamerinside": {"id": "gamerinside", "left": "THEGAMERINSIDE.COM", "right":"WEB PROGRAMMING AND CONSULTING TASKS, COLLABORATING IN GERMAN TRANSLATION<br/><a href=\"http://thegamerinside.com\" target=\"_blank\">THEGAMERINSIDE.COM</a>"},
+				"sagedread": {"id": "sagedread", "left": "SAGEDREADDESIGNS.COM", "right":"CONSULTING FOR WEBSITE SECURITY, RECOMMENDATION FOR A BETTER CMS (DRUPAL)<br/><a href=\"http://sagedreaddesigns.com\" target=\"_blank\">SAGEDREADDESIGNS.COM</a>"},
+				"x3dmodels": {"id": "x3dmodels", "left": "X3DMODELS.COM", "right":"OWN PROJECT, WEBSITE WITH 3D MODELS IN WEBGL (UNDER CONSTRUCTION), INTEGRATION OF SEVERAL SCRIPTS, CREATION OF THE WEBDESIGN AND CREATION OF THE LOGO TOGETHER WITH A GRAPHICS DESIGNER<br/><a href=\"http://x3dmodels.com\" target=\"_blank\">X3DMODELS.COM</a>"}
 			}
 		},
 		"impressum": {
