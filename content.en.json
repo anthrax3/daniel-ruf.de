@@ -25,7 +25,7 @@
 			}
 		},
 		"referenzen": {
-			"left": "REFERENZEN", "id": "referenzen", 
+			"left": "REFERENCES", "id": "referenzen", 
 			"_content": {
 				"alig": {"id": "alig", "left": "ALIG-BERATUNG.CH", "right":"INSTALLATION OF JOOMLA, A JOOMLA THEME AND SOME EXTENSIONS<br/><a href=\"http://alig-beratung.ch\" target=\"_blank\">ALIG-BERATUNG.CH</a>"},
 				"gamerinside": {"id": "gamerinside", "left": "THEGAMERINSIDE.COM", "right":"WEB PROGRAMMING AND CONSULTING TASKS, COLLABORATING IN GERMAN TRANSLATION<br/><a href=\"http://thegamerinside.com\" target=\"_blank\">THEGAMERINSIDE.COM</a>"},
