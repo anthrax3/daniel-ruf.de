@@ -200,10 +200,10 @@ if (navigator.language) {var language = navigator.language;}
 else if (navigator.userLanguage) {var language = navigator.userLanguage;}
 if (language == "de" || language == "de-DE") {var language_code ="de";}
 else {var language_code ="en";}
-$.getJSON("content."+language_code+".json", function(json) {var footer=json.footer; var nav =json._nav; var navigation=""; var prop=""; var i=0; var spacing=""; var j=0; for (count in nav) { i++;} for (prop in nav) { j++; if (i > j) {spacing="&nbsp;&nbsp;";} else {spacing="";} navigation+="<span id=\""+nav[prop].id+"\" class=\"_nav\">"+nav[prop].left+"</span>"+spacing+"";} $("#nav").html(navigation); $("#footer").html(footer);  $("._nav").on("click", getContentLeft);
+$.getJSON("content."+language_code+".json", function(json) {var footer=json.footer; var nav =json._nav; var navigation=""; var prop=""; var i=0; var spacing=""; var j=0; for (count in nav) { i++;} for (prop in nav) { j++; if (i > j) {spacing="&nbsp;&nbsp;";} else {spacing="";} navigation+="<span id=\""+nav[prop].id+"\" class=\"_nav\">"+nav[prop].left+"</span>"+spacing+"";} $("#nav").html(navigation); $("#footer").html(footer); 
 function getContentLeft() {  var id=$(this).attr("id"); var content=json._nav[id]._content; var left_content="<div id=\""+id+"\">"; var prop=""; var i=0; var spacing=""; var j=0; for (count in content) { i++;} for (prop in content) {j++; if (i > j) {spacing="<br/>";} else {spacing="";} left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing+"";} left_content+="</div>"; $("#left").html(left_content); $("#right, #footer").html(""); $("._content").on("click", getContentRight);} 
 function getContentRight() {var id=$(this).attr("id"); var content=json._nav[$(this).attr("nav")]._content[id].right; var right_content="<div id=\""+id+"_content\">"+content+"</div>"; $("#right").html(right_content);}
-});
+
 //hover code
 $("div#title, div#text, div#nav, div#footer").hide();
 $("#text").css("height","0px");
@@ -227,6 +227,8 @@ $(this).css({'color': '#555', 'text-shadow': '0px -2px 3px #222', 'cursor':'poin
 else {
 $(this).css({'color': '#222', 'text-shadow': '0px 2px 3px #555'});
 }
+$("._nav").on("click", getContentLeft);
+});
 });
 });
 });
