@@ -204,7 +204,6 @@ $.getJSON("content."+language_code+".json", function(json) {var footer=json.foot
 function getContentLeft() {  var id=$(this).attr("id"); var content=json._nav[id]._content; var left_content="<div id=\""+id+"\">"; var prop=""; var i=0; var spacing=""; var j=0; for (count in content) { i++;} for (prop in content) {j++; if (i > j) {spacing="<br/>";} else {spacing="";} left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing+"";} left_content+="</div>"; $("#left").html(left_content); $("#right, #footer").html(""); $("._content").on("click", getContentRight);} 
 function getContentRight() {var id=$(this).attr("id"); var content=json._nav[$(this).attr("nav")]._content[id].right; var right_content="<div id=\""+id+"_content\">"+content+"</div>"; $("#right").html(right_content);}
 });
-//hover code
 $("div#title, div#text, div#nav, div#footer").hide();
 $("#text").css("height","0px");
 $(".line, .line2").css("width","0px");
