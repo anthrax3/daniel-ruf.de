@@ -28,6 +28,7 @@
 			"left": "REFERENZEN", "id": "referenzen", 
 			"_content": {
 				"alig": {"id": "alig", "left": "ALIG-BERATUNG.CH", "right":"EINRICHTUNG VON JOOMLA, EINEM JOOMLA THEME UND VERSCHIEDENEN ERWEITERUNGEN<br/><a href=\"http://alig-beratung.ch\" target=\"_blank\">ALIG-BERATUNG.CH</a>"},
+				"delamar": {"id": "delamar", "left": "DELAMAR.DE", "right":"ERWEITERUNG DES BESTEHENDEN VIDEO PLAYERS UM MP4 VIDEOS FÜR ENTSPRECHENDE ENDGERÄTE ZU UNTERSTÜTZEN (WURDE SPÄTER DURCH EIN PLUGIN VOM VIDEO PLAYER ERSETZT)<br/><a href=\"http://delamar.de\" target=\"_blank\">DELAMAR.DE</a>"},
 				"gamerinside": {"id": "gamerinside", "left": "THEGAMERINSIDE.COM", "right":"WEBENTWICKLUNG UND BERATUNG IM BEREICH WEBENTWICKLUNG, ERSTELLEN DER DEUTSCHEN ÜBERSETZUNG IN ZUSAMMENARBEIT MIT EINER PROFESSIONELLEN ÜBERSETZERIN<br/><a href=\"http://thegamerinside.com\" target=\"_blank\">THEGAMERINSIDE.COM</a>"},
 				"sagedread": {"id": "sagedread", "left": "SAGEDREADDESIGNS.COM", "right":"BERATUNG ZUR ABSICHERUNG DER WEBSEITE, EMPFEHLUNG EINES BESSEREN CMS (DRUPAL)<br/><a href=\"http://sagedreaddesigns.com\" target=\"_blank\">SAGEDREADDESIGNS.COM</a>"},
 				"x3dmodels": {"id": "x3dmodels", "left": "X3DMODELS.COM", "right":"EIGENES PROJEKT, WEBSEITE MIT 3D MODELLEN IN WEBGL (NOCH IM AUFBAU), INTEGRATION VERSCHIEDENER SCRIPTE, ERSTELLUNG DES WEBDESIGNS UND ERSTELLUNG EINES PASSENDEN LOGOS ZUSAMMEN MIT EINEM GRAFIKER<br/><a href=\"http://x3dmodels.com\" target=\"_blank\">X3DMODELS.COM</a>"}
