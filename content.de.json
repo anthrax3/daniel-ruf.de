@@ -20,7 +20,7 @@
 				"itsecurity": {"id": "itsecurity", "left": "IT-SICHERHEIT", "right": "IT-SICHERHEIT<br/><br/>DATENRETTUNG, ABSICHERUNG VON WEBSEITEN, VIREN- UND MALWARE-ENTFERNUNG"},
 				"outsource": {"id": "outsource", "left": "OUTSOURCING", "right": "OUTSOURCING<br/><br/><div class=\"highlight\">2</div> AGENTUREN,<br/><div class=\"highlight\">2</div> MEDIENGESTALTER,<br/><div class=\"highlight\">2</div> GRAFIKDESIGNER,<br/><div class=\"highlight\">3</div> ILLUSTRATOREN, <br/>..."},
 				"projectmanagement": {"id": "projectmanagement", "left": "PROJEKTMANAGEMENT", "right": "PROJEKTMANAGEMENT<br/><br/>SUGARCRM"},
-				"softwaredev": {"id": "softwaredev", "left": "SOFTWARE-ENTWICKLUNG", "right": "SOFTWARE-ENTWICKLUNG<br/><br/>GIT, OBJECTIVE C, XCODE, QT, C#, JAVA"},
+				"softwaredev": {"id": "softwaredev", "left": "SOFTWARE-ENTWICKLUNG", "right": "SOFTWARE-ENTWICKLUNG<br/><br/>GIT, OBJECTIVE C, XCODE, QT, C#, JAVA, PROCESSING, AUTOIT, AUTOHOTKEY, HAXE"},
 				"webdesign": {"id": "webdesign", "left": "WEBDESIGN", "right": "WEBDESIGN<br/><br/>BLENDER, PHOTOSHOP, CSS, CSS3, TWITTER BOOTSTRAP"},
 				"webdev": {"id": "webdev", "left": "WEBENTWICKLUNG", "right": "WEBENTWICKLUNG<br/><br/>PHP, ZEND, OOP, MYSQL, CSS3, HTML5, AJAX, JQUERY, PROCESSING, DRUPAL, WORDPRESS, JOOMLA, CONTAO, RUBY ON RAILS, JAVASCRIPT, JSON"}
 			}
@@ -32,8 +32,7 @@
 				"delamar": {"id": "delamar", "left": "DELAMAR.DE", "right":"ERWEITERUNG DES BESTEHENDEN VIDEO PLAYERS UM MP4 VIDEOS FÜR ENTSPRECHENDE ENDGERÄTE ZU UNTERSTÜTZEN (WURDE SPÄTER DURCH EIN PLUGIN VOM VIDEO PLAYER ERSETZT)<br/><a href=\"http://delamar.de\" target=\"_blank\">DELAMAR.DE</a>"},
 				"manager": {"id": "manager", "left": "MANAGER.IO", "right":"ÜBERSETZUNG DER KOSTENLOSEN BUCHHALTUNGSSOFTWARE MANAGER AUF DEUTSCH<br/><a href=\"http://manager.io\" target=\"_blank\">MANAGER.IO</a>"},
 				"sagedread": {"id": "sagedread", "left": "SAGEDREADDESIGNS.COM", "right":"BERATUNG ZUR ABSICHERUNG DER WEBSEITE, EMPFEHLUNG EINES BESSEREN CMS (DRUPAL)<br/><a href=\"http://sagedreaddesigns.com\" target=\"_blank\">SAGEDREADDESIGNS.COM</a>"},
-				"gamerinside": {"id": "gamerinside", "left": "THEGAMERINSIDE.COM", "right":"WEBENTWICKLUNG UND BERATUNG IM BEREICH WEBENTWICKLUNG, ERSTELLEN DER DEUTSCHEN ÜBERSETZUNG IN ZUSAMMENARBEIT MIT EINER PROFESSIONELLEN ÜBERSETZERIN<br/><a href=\"http://thegamerinside.com\" target=\"_blank\">THEGAMERINSIDE.COM</a>"},
-				"x3dmodels": {"id": "x3dmodels", "left": "X3DMODELS.COM", "right":"EIGENES PROJEKT, WEBSEITE MIT 3D MODELLEN IN WEBGL (NOCH IM AUFBAU), INTEGRATION VERSCHIEDENER SCRIPTE, ERSTELLUNG DES WEBDESIGNS UND ERSTELLUNG EINES PASSENDEN LOGOS ZUSAMMEN MIT EINEM GRAFIKER<br/><a href=\"http://x3dmodels.com\" target=\"_blank\">X3DMODELS.COM</a>"}
+				"gamerinside": {"id": "gamerinside", "left": "THEGAMERINSIDE.COM", "right":"WEBENTWICKLUNG UND BERATUNG IM BEREICH WEBENTWICKLUNG, ERSTELLEN DER DEUTSCHEN ÜBERSETZUNG IN ZUSAMMENARBEIT MIT EINER PROFESSIONELLEN ÜBERSETZERIN<br/><a href=\"http://thegamerinside.com\" target=\"_blank\">THEGAMERINSIDE.COM</a>"}
 			}
 		},
 		"impressum": {
