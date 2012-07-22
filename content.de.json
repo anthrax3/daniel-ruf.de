@@ -40,7 +40,9 @@
 			"_content": {
 				"adresse": {"id": "adresse", "left": "ADRESSE", "right": "DANIEL RUF<br/>OTZBERGRING 27<br/>64846 GROSS-ZIMMERN" },
 				"email": {"id": "email", "left": "EMAIL", "right": "KONTAKT@DANIEL-RUF.DE"},
-				"telefon": {"id": "telefon", "left": "TELEFON", "right": "0176 69 112 848 (MOBIL)"}
+				"telefon": {"id": "telefon", "left": "TELEFON", "right": "0176 69 112 848 (MOBIL)"},
+				"linkedin": {"id": "linkedin", "left": "LINKEDIN", "right": "<a href=\"http://linkedin.com/pub/daniel-ruf/22/694/6aa\" target=\"_blank\">PROFIL</a>"},
+				"xing": {"id": "xing", "left": "XING", "right": "<a href=\"https://www.xing.com/profile/Daniel_Ruf13\" target=\"_blank\">PROFIL</a>"}
 			}
 		}
 	}
