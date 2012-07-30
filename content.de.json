@@ -29,6 +29,7 @@
 			"left": "REFERENZEN", "id": "referenzen", 
 			"_content": {
 				"alig": {"id": "alig", "left": "ALIG-BERATUNG.CH", "right":"EINRICHTUNG VON JOOMLA, EINEM JOOMLA THEME UND VERSCHIEDENEN ERWEITERUNGEN<br/><a href=\"http://alig-beratung.ch\" target=\"_blank\">ALIG-BERATUNG.CH</a>"},
+				"darkout": {"id": "darkout", "left": "DARKOUTGAME.COM", "right":"ÜBERSETZUNG DER ENGLISCHEN PRESSEMELDUNG IN DEUTSCH<br/><a href=\"http://www.slideshare.net/DarkoutGame/darkout-announcement-english-13598670\">ENGLISCHE PRESSEMELDUNG</a><br/><a href=\"http://www.slideshare.net/DarkoutGame/darkout-announcement-pressnote-de\">DEUTSCHE PRESSEMELDUNG</a><br/><a href=\"http://darkoutgame.com\" target=\"_blank\">DARKOUTGAME.COM</a>"},
 				"delamar": {"id": "delamar", "left": "DELAMAR.DE", "right":"ERWEITERUNG DES BESTEHENDEN VIDEO PLAYERS UM MP4 VIDEOS FÜR ENTSPRECHENDE ENDGERÄTE ZU UNTERSTÜTZEN (WURDE SPÄTER DURCH EIN PLUGIN VOM VIDEO PLAYER ERSETZT)<br/><a href=\"http://delamar.de\" target=\"_blank\">DELAMAR.DE</a>"},
 				"manager": {"id": "manager", "left": "MANAGER.IO", "right":"ÜBERSETZUNG DER KOSTENLOSEN BUCHHALTUNGSSOFTWARE MANAGER AUF DEUTSCH<br/><a href=\"http://manager.io\" target=\"_blank\">MANAGER.IO</a>"},
 				"sagedread": {"id": "sagedread", "left": "SAGEDREADDESIGNS.COM", "right":"BERATUNG ZUR ABSICHERUNG DER WEBSEITE, EMPFEHLUNG EINES BESSEREN CMS (DRUPAL)<br/><a href=\"http://sagedreaddesigns.com\" target=\"_blank\">SAGEDREADDESIGNS.COM</a>"},

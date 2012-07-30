@@ -29,6 +29,7 @@
 			"left": "REFERENCES", "id": "references", 
 			"_content": {
 				"alig": {"id": "alig", "left": "ALIG-BERATUNG.CH", "right":"INSTALLATION OF JOOMLA, A JOOMLA THEME AND SOME EXTENSIONS<br/><a href=\"http://alig-beratung.ch\" target=\"_blank\">ALIG-BERATUNG.CH</a>"},
+				"darkout": {"id": "darkout", "left": "DARKOUTGAME.COM", "right":"TRANSLATION OF THE ENGLISH PRESS RELEASE IN GERMAN<br/><a href=\"http://www.slideshare.net/DarkoutGame/darkout-announcement-english-13598670\">ENGLISH PRESS RELEASE</a><br/><a href=\"http://www.slideshare.net/DarkoutGame/darkout-announcement-pressnote-de\">GERMAN PRESS RELEASE</a><br/><a href=\"http://darkoutgame.com\" target=\"_blank\">DARKOUTGAME.COM</a>"},
 				"delamar": {"id": "delamar", "left": "DELAMAR.DE", "right":"EXPANSION OF EXISTING VIDEO PLAYER TO SUPPORT MP4 VIDEOS FOR APPROPRIATE DEVICES (WAS LATER REPLACED BY A PLUGIN FROM THE VIDEO PLAYER)<br/><a href=\"http://delamar.de\" target=\"_blank\">DELAMAR.DE</a>"},
 				"manager": {"id": "manager", "left": "MANAGER.IO", "right":"TRANSLATION OF THE FREE ACCOUNTING SOFTWARE MANAGER INTO GERMAN<br/><a href=\"http://manager.io\" target=\"_blank\">MANAGER.IO</a>"},
 				"sagedread": {"id": "sagedread", "left": "SAGEDREADDESIGNS.COM", "right":"CONSULTING FOR WEBSITE SECURITY, RECOMMENDATION FOR A BETTER CMS (DRUPAL)<br/><a href=\"http://sagedreaddesigns.com\" target=\"_blank\">SAGEDREADDESIGNS.COM</a>"},
