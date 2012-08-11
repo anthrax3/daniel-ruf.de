@@ -95,7 +95,6 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, em, img, strong, b, u, i, cent
 </div>
 <script type="text/javascript">
 $(document).ready(function () {
-var text_h=$("#mmm").height();
 function calcSizes() { var width_s=$(".span6").width(); var width_l=$(".span12").width(); $("#text").height($("#mmm").height()); var wsv_1=width_s/5.10909091; var wsv_2=width_s/7.20513; var wsv_3=width_l/38.3; var wsv_4=width_s/56.267; var wsv_5=width_l/57.45; var wsv_6=width_s/5.62; var hspace=wsv_2/2; $("#fff").css({"font-size":""+wsv_1+"px"}); $("#mmm").css({"font-size":""+wsv_2+"px"}); $("#hspace").height(hspace); $("#line_long").height(''+wsv_5+'px'); $(".fontface4").css({'font-size':''+wsv_3+'px'}); $("#line_short").height(''+wsv_4+'px');  $("#line_long").height(''+wsv_5+'px'); $("#topheight").height(''+wsv_6+'px');}
 calcSizes(); $(window).resize(function() {calcSizes();});
 if (navigator.language) {var language = navigator.language;} else if (navigator.userLanguage) {var language = navigator.userLanguage;}
