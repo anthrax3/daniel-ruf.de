@@ -13,7 +13,7 @@
 			"left": "KENNTNISSE", "id": "kenntnisse", 
 			"_content": {
 				"consulting": {"id": "consulting", "left": "BERATUNG", "right": "BERATUNG<br/><br/>IT-BERATUNG, UNTERNEHMENSBERATUNG, PROJEKTMANAGEMENT, COACHING, STRATEGIEBERATUNG"},
-				"grafik": {"id": "grafik", "left": "GRAFIKDESIGN", "right": "GRAFIKDESIGN<br/><br/>PHOTOSHOP, BLENDER, ILLUSTRATOR, WACOM, INDESIGN, INCSCAPE, SCRIBUS"},
+				"grafik": {"id": "grafik", "left": "GRAFIKDESIGN", "right": "GRAFIKDESIGN<br/><br/>PHOTOSHOP, BLENDER, ILLUSTRATOR, WACOM, INDESIGN, QUARK XPRESS, INCSCAPE, SCRIBUS"},
 				"itsecurity": {"id": "itsecurity", "left": "IT-SICHERHEIT", "right": "IT-SICHERHEIT<br/><br/>DATENRETTUNG, ABSICHERUNG VON WEBSEITEN, VIREN- UND MALWARE-ENTFERNUNG"},
 				"outsource": {"id": "outsource", "left": "OUTSOURCING", "right": "OUTSOURCING<br/><br/>ZURZEIT <div class=\"highlight\">x</div> PARTNER"},
 				"projectmanagement": {"id": "projectmanagement", "left": "PROJEKTMANAGEMENT", "right": "PROJEKTMANAGEMENT<br/><br/>SUGARCRM, GANTT"},
