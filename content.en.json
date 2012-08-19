@@ -14,7 +14,7 @@
 			"_content": {
 				"consulting": {"id": "consulting", "left": "CONSULTING", "right": "CONSULTING<br/><br/>IT-CONSULTING, BUSINESS CONSULTING, PROJECTMANAGEMENT, COACHING, STRATEGY CONSULTING"},
 				"grafik": {"id": "grafik", "left": "GRAPHICDESIGN", "right": "GRAPHICDESIGN<br/><br/>PHOTOSHOP, BLENDER, ILLUSTRATOR, WACOM, INDESIGN, QUARK XPRESS, INCSCAPE, SCRIBUS"},
-				"itsecurity": {"id": "itsecurity", "left": "IT-SECURITY", "right": "IT-SECURITY<br/><br/>DATARESCUE, WEBSITEPROTECTION, VIRUS- UND MALWARE-REMOVAL"},
+				"itsecurity": {"id": "itsecurity", "left": "IT-SECURITY", "right": "IT-SECURITY<br/><br/>DATARESCUE, WEBSITEPROTECTION, VIRUS- AND MALWARE-REMOVAL"},
 				"outsource": {"id": "outsource", "left": "OUTSOURCING", "right": "OUTSOURCING<br/><br/>CURRENTLY <div class=\"highlight\">x</div> PARTNERS"},
 				"projectmanagement": {"id": "projectmanagement", "left": "PROJECTMANAGEMENT", "right": "PROJECTMANAGEMENT<br/><br/>SUGARCRM, GANTT"},
 				"softwaredev": {"id": "softwaredev", "left": "SOFTWAREDEVELOPMENT", "right": "SOFTWARE-DEVELOPMENT<br/><br/>GIT, OBJECTIVE C, XCODE, C#, JAVA, AUTOIT, AUTOHOTKEY, HAXE, FLEX, ACTIONSCRIPT"},
