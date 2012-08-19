@@ -17,9 +17,9 @@
 				"itsecurity": {"id": "itsecurity", "left": "IT-SICHERHEIT", "right": "IT-SICHERHEIT<br/><br/>DATENRETTUNG, ABSICHERUNG VON WEBSEITEN, VIREN- UND MALWARE-ENTFERNUNG"},
 				"outsource": {"id": "outsource", "left": "OUTSOURCING", "right": "OUTSOURCING<br/><br/>ZURZEIT <div class=\"highlight\">x</div> PARTNER"},
 				"projectmanagement": {"id": "projectmanagement", "left": "PROJEKTMANAGEMENT", "right": "PROJEKTMANAGEMENT<br/><br/>SUGARCRM, GANTT"},
-				"softwaredev": {"id": "softwaredev", "left": "SOFTWARE-ENTWICKLUNG", "right": "SOFTWARE-ENTWICKLUNG<br/><br/>GIT, OBJECTIVE C, XCODE, C#, JAVA, AUTOIT, AUTOHOTKEY, HAXE, FLEX, ACTIONSCRIPT"},
+				"softwaredev": {"id": "softwaredev", "left": "SOFTWAREENTWICKLUNG", "right": "SOFTWARE-ENTWICKLUNG<br/><br/>GIT, OBJECTIVE C, XCODE, C#, JAVA, AUTOIT, AUTOHOTKEY, HAXE, FLEX, ACTIONSCRIPT"},
 				"webdesign": {"id": "webdesign", "left": "WEBDESIGN", "right": "WEBDESIGN<br/><br/>SVG, CSS, CSS3, TWITTER BOOTSTRAP"},
-				"webdev": {"id": "webdev", "left": "WEBENTWICKLUNG", "right": "WEBENTWICKLUNG<br/><br/>PHP, ZEND, X3D, OOP, MYSQL, CSS3, HTML5, AJAX, JQUERY, DRUPAL, JOOMLA, CONTAO, RUBY ON RAILS, JAVASCRIPT, JSON, MVC, COFFEESCRIPT, SVG, UIX, UX"}
+				"webdev": {"id": "webdev", "left": "WEBENTWICKLUNG", "right": "WEBENTWICKLUNG<br/><br/>PHP, ZEND, X3D, OOP, MYSQL, HTML5, AJAX, JQUERY, DRUPAL, JOOMLA, CONTAO, RUBY ON RAILS, JAVASCRIPT, JSON, MVC, COFFEESCRIPT, SVG, UX"}
 			}
 		},
 		"referenzen": {
