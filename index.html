@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false;">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="title" content="Daniel Ruf - Crossmedia Mediengestalter" />
@@ -53,14 +53,9 @@ html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 .row-fluid [class*="span"]{display:block;width:100%;min-height:5px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;float:left;margin-left:2.127659574%;*margin-left:2.0744680846382977%;}
 .row-fluid [class*="span"]:first-child{margin-left:0;}
 .row-fluid .span12{width:99.99999998999999%;*width:99.94680850063828%;}
-.row-fluid .span11{width:91.489361693%;*width:91.4361702036383%;}
 .row-fluid .span10{width:82.97872339599999%;*width:82.92553190663828%;}
-.row-fluid .span9{width:74.468085099%;*width:74.4148936096383%;}
-.row-fluid .span8{width:65.95744680199999%;*width:65.90425531263828%;}
-.row-fluid .span7{width:57.446808505%;*width:57.3936170156383%;}
 .row-fluid .span6{width:48.93617020799999%;*width:48.88297871863829%;}
 .row-fluid .span5{width:40.425531911%;*width:40.3723404216383%;}
-.row-fluid .span4{width:31.914893614%;*width:31.8617021246383%;}
 .row-fluid .span3{width:23.404255317%;*width:23.3510638276383%;}
 .row-fluid .span2{width:14.89361702%;*width:14.8404255306383%;}
 .row-fluid .span1{width:6.382978723%;*width:6.329787233638298%;}
@@ -88,18 +83,17 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, em, img, strong, b, u, i, cent
 <div class="row-fluid"><div class="span12"><div id="hspace"></div><div style="text-align:center;" class="fontface4 " id="nav"></div></div></div>
 <div class="row-fluid"><div class="span12"><div id="line_long"></div></div></div>
 <div class="row-fluid" id="ppp"><div class="span5"><div id="aaa" class="fontface4 " style="float:left; text-align:left; border:0px solid #ffffff; padding:10px;"><div style="float:left; text-align:left; padding:10px;" class="fontface4 " id="left"></div></div></div><div class="span2"></div><div class="span5"><div id="sss" class="fontface44" style="float:right; text-align:right; border:0px solid #ffffff; padding:10px;"><div style="text-align:right; padding:10px;" class="fontface4 " id="right"></div></div></div></div>
-<div class="row-fluid"><div class="span12"><div style="text-align:center;" class="fontface4 "  id="footer">Bitte aktiviere Javascript<br/><br/>Impressum:<br/>Daniel Ruf<br/>Otzbergring 27<br/>64846 Gross-Zimmern<br/>0176 69 112 848<br /></div></div></div>
-<div class="row-fluid"><div class="span12"><div style="text-align:center;" class="fontface4 " id="end"></div></div></div>
+<div class="row-fluid"><div class="span12"><div style="text-align:center;" class="fontface4"  id="footer">Bitte aktiviere Javascript<br/><br/>Impressum:<br/>Daniel Ruf<br/>Otzbergring 27<br/>64846 Gross-Zimmern<br/>0176 69 112 848<br /></div></div></div>
 </div>
 <script type="text/javascript">
 $(document).ready(function () {
-function calcSizes() { var width_s=$(".span6").width(); var width_l=$(".span12").width(); $("#text").height($("#mmm").height()); var wsv_1=width_s/5.10909091; var wsv_2=width_s/7.20513; var wsv_3=width_l/38.3; var wsv_4=width_s/56.267; var wsv_5=width_l/57.45; var wsv_6=width_s/5.62; var hspace=wsv_2/2; $("#fff").css({"font-size":""+wsv_1+"px"}); $("#mmm").css({"font-size":""+wsv_2+"px"}); $("#hspace").height(hspace); $("#line_long").height(wsv_5); $(".fontface4").css({"font-size":""+wsv_3+"px"}); $("#line_short").height(wsv_4);  $("#line_long").height(wsv_5); $("#topheight").height(wsv_6);}
+function calcSizes() { var width_s=$(".span6").width(), width_l=$(".span12").width(), wsv_1=width_s/5.10909091, wsv_2=width_s/7.20513, wsv_3=width_l/38.3, wsv_4=width_s/56.267, wsv_5=width_l/57.45, wsv_6=width_s/5.62, hspace=wsv_2/2; $("#fff").css({"font-size":""+wsv_1+"px"}); $("#mmm").css({"font-size":""+wsv_2+"px"}); $("#hspace").height(hspace); $("#line_long").height(wsv_5); $(".fontface4").css({"font-size":""+wsv_3+"px"}); $("#line_short").height(wsv_4);  $("#topheight").height(wsv_6); $("#text").height($("#mmm").height()); }
 calcSizes(); $(window).resize(function() {calcSizes();});
 if (navigator.language) {var language=navigator.language;} else if (navigator.userLanguage) {var language=navigator.userLanguage;}
-if (language=="de" || language=="de-DE") {var language_code="de";} else {var language_code="en";}
-$.getJSON("content."+language_code+".json", function(json) {var footer=json.footer; var nav=json._nav; var navigation=""; var prop=""; var i=0; var spacing=""; var j=0; for (count in nav) { i++;} for (prop in nav) { j++; if (i > j) {spacing="&nbsp;&nbsp;&nbsp;&nbsp;";} else {spacing="";} navigation+="<span id=\""+nav[prop].id+"\" class=\"\">"+nav[prop].left+"</span>"+spacing+"";} $("#nav").html(navigation); $("#footer").html(footer);  $("#nav").on("click", "._nav", getContentLeft);
-function getContentLeft() {  var id=$(this).attr("id"); var content=json._nav[id]._content; var left_content="<div id=\""+id+"\">"; var prop=""; var i=0; var spacing=""; var j=0; for (count in content) { i++;} for (prop in content) {j++; if (i > j) {spacing="<br/>";} else {spacing="";} left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing+"";} left_content+="</div>"; $("#left").html(left_content); $("#right, #footer").html(""); $("._content").on("click", getContentRight);} 
-function getContentRight() {var id=$(this).attr("id"); var content=json._nav[$(this).attr("nav")]._content[id].right; var right_content="<div id=\""+id+"_content\">"+content+"</div>"; $("#right").html(right_content);}});
+var language_code = (language=="de" || language=="de-DE") ? "de" : "en";
+$.getJSON("content."+language_code+".json", function(json) {var footer=json.footer; var nav=json._nav; var navigation=""; var prop=""; var i=0; var spacing=""; var j=0; for (count in nav) { i++;} for (prop in nav) { j++; spacing=(i > j) ? "&nbsp;&nbsp;&nbsp;&nbsp;" : ""; navigation+="<span id=\""+nav[prop].id+"\" class=\"\">"+nav[prop].left+"</span>"+spacing+"";} $("#nav").html(navigation); $("#footer").html(footer);  $("#nav").on("click", "._nav", getContentLeft);
+function getContentLeft() {  var id=$(this).attr("id"), content=json._nav[id]._content, left_content="<div id=\""+id+"\">", prop="", i=0, spacing="", j=0; for (count in content) { i++;} for (prop in content) {j++; spacing=(i > j) ? "<br/>" : ""; left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing+"";} left_content+="</div>"; $("#left").html(left_content); $("#right, #footer").html(""); $("._content").on("click", getContentRight);} 
+function getContentRight() {var id=$(this).attr("id"), content=json._nav[$(this).attr("nav")]._content[id].right, right_content="<div id=\""+id+"_content\">"+content+"</div>"; $("#right").html(right_content);}});
 $("div#title, div#text, div#nav, div#footer").hide(); $("#text").css("height","0px"); $("#line_short, #line_long").css({"width":"0px","margin":"0"}); $("#title").fadeIn(2000);
 $.when($("#title")).done(function(elements) {$("#line_short").animate({width: "100%"}, 1000); 
 $.when($("#line_short")).done(function(lements) {$("#text").show(); var text_h=$("#mmm").height(); $("#text").animate({height: text_h}, 1500);
@@ -107,7 +101,7 @@ $.when($("#text")).done(function(elements) {$("#nav").fadeIn(1000 );
 $.when($("#nav")).done(function(lements) {$("#line_long").animate({width: "100%"}, 1500);
 $.when($("#line_long")).done(function(elements) {$("#footer").fadeIn(1000);
 $.when($("#footer")).done(function(elements) {$("div#nav > span").addClass("_nav");
-$(document).on("mouseover mouseout",".fontface4 span",function(event) {if (event.type=="mouseover"){$(this).css({"color":"#499BEA","cursor":"pointer"});} else {$(this).css({"color":"#ffffff"});}
+$(document).on("mouseover mouseout",".fontface4 span",function(event) {(event.type=="mouseover")? $(this).css({"color":"#499BEA","cursor":"pointer"}) : $(this).css({"color":"#ffffff"});
 });});});});});});});});
 </script>
 </html>
