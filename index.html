@@ -53,12 +53,10 @@ html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 .row-fluid [class*="span"]{display:block;width:100%;min-height:5px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;float:left;margin-left:2.127659574%;*margin-left:2.0744680846382977%;}
 .row-fluid [class*="span"]:first-child{margin-left:0;}
 .row-fluid .span12{width:99.99999998999999%;*width:99.94680850063828%;}
-.row-fluid .span10{width:82.97872339599999%;*width:82.92553190663828%;}
 .row-fluid .span6{width:48.93617020799999%;*width:48.88297871863829%;}
 .row-fluid .span5{width:40.425531911%;*width:40.3723404216383%;}
 .row-fluid .span3{width:23.404255317%;*width:23.3510638276383%;}
 .row-fluid .span2{width:14.89361702%;*width:14.8404255306383%;}
-.row-fluid .span1{width:6.382978723%;*width:6.329787233638298%;}
 .container-fluid{padding-right:100px;padding-left:100px;*zoom:1;} .container-fluid:before,.container-fluid:after{display:table;content:"";} .container-fluid:after{clear:both;}
 #line_long {width:1200px; margin: 0 auto 0 auto; height:20px; -webkit-border-radius:2px; border-radius:2px; background:#499BEA; }
 #line_short {width:550px; margin: 0 auto 0 auto; height:10px; -webkit-border-radius:2px; border-radius:2px; background:#499BEA; }
@@ -94,13 +92,13 @@ var language_code = (language=="de" || language=="de-DE") ? "de" : "en";
 $.getJSON("content."+language_code+".json", function(json) {var footer=json.footer; var nav=json._nav; var navigation=""; var prop=""; var i=0; var spacing=""; var j=0; for (count in nav) { i++;} for (prop in nav) { j++; spacing=(i > j) ? "&nbsp;&nbsp;&nbsp;&nbsp;" : ""; navigation+="<span id=\""+nav[prop].id+"\" class=\"\">"+nav[prop].left+"</span>"+spacing+"";} $("#nav").html(navigation); $("#footer").html(footer);  $("#nav").on("click", "._nav", getContentLeft);
 function getContentLeft() {  var id=$(this).attr("id"), content=json._nav[id]._content, left_content="<div id=\""+id+"\">", prop="", i=0, spacing="", j=0; for (count in content) { i++;} for (prop in content) {j++; spacing=(i > j) ? "<br/>" : ""; left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing+"";} left_content+="</div>"; $("#left").html(left_content); $("#right, #footer").html(""); $("._content").on("click", getContentRight);} 
 function getContentRight() {var id=$(this).attr("id"), content=json._nav[$(this).attr("nav")]._content[id].right, right_content="<div id=\""+id+"_content\">"+content+"</div>"; $("#right").html(right_content);}});
-$("div#title, div#text, div#nav, div#footer").hide(); $("#text").css("height","0px"); $("#line_short, #line_long").css({"width":"0px","margin":"0"}); $("#title").fadeIn(2000);
+$("#title, #text, #nav, #footer").hide(); $("#text").css("height","0px"); $("#line_short, #line_long").css({"width":"0px","margin":"0"}); $("#title").fadeIn(2000);
 $.when($("#title")).done(function(elements) {$("#line_short").animate({width: "100%"}, 1000); 
 $.when($("#line_short")).done(function(lements) {$("#text").show(); var text_h=$("#mmm").height(); $("#text").animate({height: text_h}, 1500);
 $.when($("#text")).done(function(elements) {$("#nav").fadeIn(1000 );
 $.when($("#nav")).done(function(lements) {$("#line_long").animate({width: "100%"}, 1500);
 $.when($("#line_long")).done(function(elements) {$("#footer").fadeIn(1000);
-$.when($("#footer")).done(function(elements) {$("div#nav > span").addClass("_nav");
+$.when($("#footer")).done(function(elements) {$("#nav span").addClass("_nav");
 $(document).on("mouseover mouseout",".fontface4 span",function(event) {(event.type=="mouseover")? $(this).css({"color":"#499BEA","cursor":"pointer"}) : $(this).css({"color":"#ffffff"});
 });});});});});});});});
 </script>
