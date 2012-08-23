@@ -45,7 +45,7 @@
     font-weight: normal;
     font-style: normal;
 }
-/*! Bootstrap v2.0.4 | Copyright 2012 Twitter, Inc | Apache License v2.0 | http://www.apache.org/licenses/LICENSE-2.0 | Designed and built with all the love in the world @twitter by @mdo and @fat. */
+/*! Bootstrap v2.0.4 | Apache License v2.0 | http://www.apache.org/licenses/LICENSE-2.0 */
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";} .clearfix:after{clear:both;}
 html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 .row-fluid{width:100%;*zoom:1;}.row-fluid:before,.row-fluid:after{display:table;content:"";}
@@ -58,16 +58,16 @@ html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 .row-fluid .span3{width:23.404255317%;*width:23.3510638276383%;}
 .row-fluid .span2{width:14.89361702%;*width:14.8404255306383%;}
 .container-fluid{padding-right:100px;padding-left:100px;*zoom:1;} .container-fluid:before,.container-fluid:after{display:table;content:"";} .container-fluid:after{clear:both;}
-#line_long {width:1200px; margin: 0 auto 0 auto; height:20px; -webkit-border-radius:2px; border-radius:2px; background:#499BEA; }
-#line_short {width:550px; margin: 0 auto 0 auto; height:10px; -webkit-border-radius:2px; border-radius:2px; background:#499BEA; }
-.fontface2 {font:77px 'CaviarDreamsRegular', Arial, sans-serif; letter-spacing:0; text-transform:uppercase; color:#FFFFFF; text-align:center; }
-.fontface1 {font:110px 'CaviarDreamsRegular', Arial, sans-serif; letter-spacing:0; text-transform:uppercase; color:#FFFFFF; text-align:center; }
-.fontface4 {font: 30px 'LatoBold', Arial, sans-serif; letter-spacing: 0; text-transform:uppercase; color: #FFFFFF;}
-.fontface44 {font: 30px 'LatoRegular', Arial, sans-serif; letter-spacing: 0; text-transform:uppercase; color: #FFFFFF;}
-.highlight, a, a:link, a:visited, a:hover, a:active, a:focus {color: #499BEA; display:inline; outline:none;}
-body {-webkit-tap-highlight-color: rgba(255, 255, 255, 0); background:#000000; line-height:1; cursor:default; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none;}
-html, body, div, span, h1, h2, h3, h4, h5, h6, a, em, img, strong, b, u, i, center {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
-#nav, #fff, #mmm {white-space:nowrap;}
+#line_long{width:1200px; margin: 0 auto 0 auto; height:20px; -webkit-border-radius:2px; border-radius:2px; background:#499BEA; }
+#line_short{width:550px; margin: 0 auto 0 auto; height:10px; -webkit-border-radius:2px; border-radius:2px; background:#499BEA; }
+.fontface2{font:77px 'CaviarDreamsRegular', Arial, sans-serif; letter-spacing:0; text-transform:uppercase; color:#FFFFFF; text-align:center; }
+.fontface1{font:110px 'CaviarDreamsRegular', Arial, sans-serif; letter-spacing:0; text-transform:uppercase; color:#FFFFFF; text-align:center; }
+.fontface4{font: 30px 'LatoBold', Arial, sans-serif; letter-spacing: 0; text-transform:uppercase; color: #FFFFFF;}
+.fontface44{font: 30px 'LatoRegular', Arial, sans-serif; letter-spacing: 0; text-transform:uppercase; color: #FFFFFF;}
+.highlight,a,a:link,a:visited,a:hover,a:active,a:focus{color: #499BEA; display:inline; outline:none;}
+body{-webkit-tap-highlight-color: rgba(255, 255, 255, 0); background:#000000; line-height:1; cursor:default; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none;}
+html,body,div,span,h1,h2,h3,h4,h5,h6,a,em,img,strong,b,u,i,center{margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+#nav,#fff,#mmm{white-space:nowrap;}
 </style>
 <script type="text/javascript">
 /*! jQuery v@1.8.0 jquery.com | jquery.org/license */
@@ -84,22 +84,22 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, em, img, strong, b, u, i, cent
 <div class="row-fluid"><div class="span12"><div style="text-align:center;" class="fontface4"  id="footer">Bitte aktiviere Javascript<br/><br/>Impressum:<br/>Daniel Ruf<br/>Otzbergring 27<br/>64846 Gross-Zimmern<br/>0176 69 112 848<br /></div></div></div>
 </div>
 <script type="text/javascript">
-$(document).ready(function () {
-function calcSizes() { var width_s=$(".span6").width(), width_l=$(".span12").width(), wsv_1=width_s/5.10909091, wsv_2=width_s/7.20513, wsv_3=width_l/38.3, wsv_4=width_s/56.267, wsv_5=width_l/57.45, wsv_6=width_s/5.62, hspace=wsv_2/2; $("#fff").css({"font-size":""+wsv_1+"px"}); $("#mmm").css({"font-size":""+wsv_2+"px"}); $("#hspace").height(hspace); $("#line_long").height(wsv_5); $(".fontface4").css({"font-size":""+wsv_3+"px"}); $("#line_short").height(wsv_4);  $("#topheight").height(wsv_6); $("#text").height($("#mmm").height()); }
-calcSizes(); $(window).resize(function() {calcSizes();});
-if (navigator.language) {var language=navigator.language;} else if (navigator.userLanguage) {var language=navigator.userLanguage;}
-var language_code = (language=="de" || language=="de-DE") ? "de" : "en";
-$.getJSON("content."+language_code+".json", function(json) {var footer=json.footer; var nav=json._nav; var navigation=""; var prop=""; var i=0; var spacing=""; var j=0; for (count in nav) { i++;} for (prop in nav) { j++; spacing=(i > j) ? "&nbsp;&nbsp;&nbsp;&nbsp;" : ""; navigation+="<span id=\""+nav[prop].id+"\" class=\"\">"+nav[prop].left+"</span>"+spacing+"";} $("#nav").html(navigation); $("#footer").html(footer);  $("#nav").on("click", "._nav", getContentLeft);
-function getContentLeft() {  var id=$(this).attr("id"), content=json._nav[id]._content, left_content="<div id=\""+id+"\">", prop="", i=0, spacing="", j=0; for (count in content) { i++;} for (prop in content) {j++; spacing=(i > j) ? "<br/>" : ""; left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing+"";} left_content+="</div>"; $("#left").html(left_content); $("#right, #footer").html(""); $("._content").on("click", getContentRight);} 
-function getContentRight() {var id=$(this).attr("id"), content=json._nav[$(this).attr("nav")]._content[id].right, right_content="<div id=\""+id+"_content\">"+content+"</div>"; $("#right").html(right_content);}});
+$(document).ready(function(){
+function calcSizes(){var width_s=$(".span6").width(), width_l=$(".span12").width(); $("#fff").css({"font-size":""+width_s/5.10909091+"px"}); $("#left, #right, #aaa, #sss").css({"padding":""+width_l/38.3/2+"px"}); $("#mmm").css({"font-size":""+width_s/7.20513+"px"}); $("#line_long, #line_short").css({"border-radius":""+width_l/38.3/10+"px"}); $("#hspace").height(width_s/7.20513/2); $("#line_long").height(width_l/57.45); $(".fontface4").css({"font-size":""+width_l/38.3+"px"}); $("#line_short").height(width_s/56.267);  $("#topheight").height(width_s/5.62); $("#text").height($("#mmm").height());}
+calcSizes(); $(window).resize(function(){calcSizes();});
+var language=(navigator.language) ? navigator.language : (navigator.userLanguage) ? navigator.userLanguage : "en";
+var language_code=(language=="de"||language=="de-DE") ? "de" : "en";
+$.getJSON("content."+language_code+".json", function(json){var footer=json.footer; var nav=json._nav; var navigation=""; var prop=""; var i=0; var spacing=""; var j=0; for (count in nav){i++;} for (prop in nav){j++; spacing=(i > j) ? "&nbsp;&nbsp;&nbsp;&nbsp;" : ""; navigation+="<span id=\""+nav[prop].id+"\" class=\"\">"+nav[prop].left+"</span>"+spacing+"";} $("#nav").html(navigation); $("#footer").html(footer);  $("#nav").on("click", "._nav", getContentLeft);
+function getContentLeft(){var id=$(this).attr("id"), content=json._nav[id]._content, left_content="<div id=\""+id+"\">", prop="", i=0, spacing="", j=0; for (count in content){i++;} for (prop in content){j++; spacing=(i > j) ? "<br/>" : ""; left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing+"";} left_content+="</div>"; $("#left").html(left_content); $("#right, #footer").html(""); $("._content").on("click", getContentRight);} 
+function getContentRight(){var id=$(this).attr("id"), content=json._nav[$(this).attr("nav")]._content[id].right, right_content="<div id=\""+id+"_content\">"+content+"</div>"; $("#right").html(right_content);}});
 $("#title, #text, #nav, #footer").hide(); $("#text").css("height","0px"); $("#line_short, #line_long").css({"width":"0px","margin":"0"}); $("#title").fadeIn(2000);
-$.when($("#title")).done(function(elements) {$("#line_short").animate({width: "100%"}, 1000); 
-$.when($("#line_short")).done(function(lements) {$("#text").show(); var text_h=$("#mmm").height(); $("#text").animate({height: text_h}, 1500);
-$.when($("#text")).done(function(elements) {$("#nav").fadeIn(1000 );
-$.when($("#nav")).done(function(lements) {$("#line_long").animate({width: "100%"}, 1500);
-$.when($("#line_long")).done(function(elements) {$("#footer").fadeIn(1000);
-$.when($("#footer")).done(function(elements) {$("#nav span").addClass("_nav");
-$(document).on("mouseover mouseout",".fontface4 span",function(event) {(event.type=="mouseover")? $(this).css({"color":"#499BEA","cursor":"pointer"}) : $(this).css({"color":"#ffffff"});
+$.when($("#title")).done(function(elements){$("#line_short").animate({width: "100%"}, 1000); 
+$.when($("#line_short")).done(function(lements){$("#text").show(); var text_h=$("#mmm").height(); $("#text").animate({height: text_h}, 1500);
+$.when($("#text")).done(function(elements){$("#nav").fadeIn(1000 );
+$.when($("#nav")).done(function(lements){$("#line_long").animate({width: "100%"}, 1500);
+$.when($("#line_long")).done(function(elements){$("#footer").fadeIn(1000);
+$.when($("#footer")).done(function(elements){$("#nav span").addClass("_nav");
+$(document).on("mouseover mouseout",".fontface4 span",function(event){(event.type=="mouseover") ? $(this).css({"color":"#499BEA","cursor":"pointer"}) : $(this).css({"color":"#ffffff"});
 });});});});});});});});
 </script>
 </html>
