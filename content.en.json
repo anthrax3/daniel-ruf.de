@@ -12,11 +12,10 @@
 		"skills": {
 			"left": "SKILLS", "id": "skills", 
 			"_content": {
-				"consulting": {"id": "consulting", "left": "CONSULTING", "right": "CONSULTING<br/><br/>IT-CONSULTING, BUSINESS CONSULTING, PROJECTMANAGEMENT, COACHING, STRATEGY CONSULTING"},
+				"consulting": {"id": "consulting", "left": "CONSULTING", "right": "CONSULTING<br/><br/>IT-CONSULTING, BUSINESS CONSULTING, PROJECTMANAGEMENT, COACHING, STRATEGY CONSULTING, CONCEPT DEVELOPMENT"},
 				"grafik": {"id": "grafik", "left": "GRAPHICDESIGN", "right": "GRAPHICDESIGN<br/><br/>PHOTOSHOP, BLENDER, ILLUSTRATOR, WACOM, INDESIGN, QUARK XPRESS, INCSCAPE, SCRIBUS"},
 				"itsecurity": {"id": "itsecurity", "left": "IT-SECURITY", "right": "IT-SECURITY<br/><br/>DATARESCUE, WEBSITEPROTECTION, VIRUS- AND MALWARE-REMOVAL"},
 				"outsource": {"id": "outsource", "left": "OUTSOURCING", "right": "OUTSOURCING<br/><br/>CURRENTLY <div class=\"highlight\">9</div> PARTNERS"},
-				"projectmanagement": {"id": "projectmanagement", "left": "PROJECTMANAGEMENT", "right": "PROJECTMANAGEMENT<br/><br/>SUGARCRM, GANTT"},
 				"softwaredev": {"id": "softwaredev", "left": "SOFTWAREDEVELOPMENT", "right": "SOFTWARE-DEVELOPMENT<br/><br/>GIT, OBJECTIVE C, XCODE, C#, JAVA, AUTOIT, AUTOHOTKEY, HAXE, FLEX, ACTIONSCRIPT"},
 				"webdesign": {"id": "webdesign", "left": "WEBDESIGN", "right": "WEBDESIGN<br/><br/>SVG, CSS, CSS3, TWITTER BOOTSTRAP"},
 				"webdev": {"id": "webdev", "left": "WEBDEVELOPMENT", "right": "WEBDEVELOPMENT<br/><br/>PHP, ZEND, X3D, OOP, MYSQL, HTML5, AJAX, JQUERY, DRUPAL, JOOMLA, CONTAO, RUBY ON RAILS, JAVASCRIPT, JSON, MVC, COFFEESCRIPT, SVG, UX"}
