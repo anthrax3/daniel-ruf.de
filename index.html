@@ -84,21 +84,21 @@ html,body,div,span,h1,h2,h3,h4,h5,h6,a,em,img,strong,b,u,i,center{margin:0;paddi
 </div>
 <script type="text/javascript">
 $(document).ready(function(){
-function calcSizes(){var width_s=$(".span6").width(), width_l=$(".span12").width(); $("#fff").css({"font-size":""+width_s/5.10909091+"px"}); $("#left, #right").css({"padding":""+width_l/38.3+"px"}); $("#mmm").css({"font-size":""+width_s/7.20513+"px"}); $("#line_long, #line_short").css({"border-radius":""+width_l/38.3/15+"px"}); $("#hspace").height(width_s/7.20513/2); $("#line_long").height(width_l/57.45); $(".fontface4").css({"font-size":""+width_l/38.3+"px"}); $("#line_short").height(width_s/56.267);  $("#topheight").height(width_s/5.62); $("#text").height($("#mmm").height());}
-calcSizes(); $(window).resize(function(){calcSizes();});
+function calcSizes(){var width_s=$(".span6").width(),width_l=$(".span12").width();$("#fff").css({"font-size":""+width_s/5.10909091+"px"});$("#left,#right").css({"padding":""+width_l/38.3+"px"});$("#mmm").css({"font-size":""+width_s/7.20513+"px"});$("#line_long,#line_short").css({"border-radius":""+width_l/38.3/15+"px"});$("#hspace").height(width_s/7.20513/2);$("#line_long").height(width_l/57.45);$(".fontface4").css({"font-size":""+width_l/38.3+"px"});$("#line_short").height(width_s/56.267);$("#topheight").height(width_s/5.62);$("#text").height($("#mmm").height());}
+calcSizes();$(window).resize(function(){calcSizes();});
 var language=navigator.userLanguage||navigator.language;
-var language_code=(language=="de"||language=="de-DE") ? "de" : "en";
-$.getJSON("content."+language_code+".json", function(json){var footer=json.footer; var nav=json._nav; var navigation=""; var prop=""; var i=0; var spacing=""; var j=0; for (count in nav){i++;} for (prop in nav){j++; spacing=(i > j) ? "&nbsp;&nbsp;&nbsp;&nbsp;" : ""; navigation+="<span id=\""+nav[prop].id+"\" class=\"\">"+nav[prop].left+"</span>"+spacing+"";} $("#nav").html(navigation); $("#footer").html(footer);  $("#nav").on("click", "._nav", getContentLeft);
-function getContentLeft(){var id=$(this).attr("id"), content=json._nav[id]._content, left_content="<div id=\""+id+"\">", prop="", i=0, spacing="", j=0; for (count in content){i++;} for (prop in content){j++; spacing=(i > j) ? "<br/>" : ""; left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing+"";} left_content+="</div>"; $("#left").html(left_content); $("#right, #footer").html(""); $("._content").on("click", getContentRight);} 
-function getContentRight(){var id=$(this).attr("id"), content=json._nav[$(this).attr("nav")]._content[id].right, right_content="<div id=\""+id+"_content\">"+content+"</div>"; $("#right").html(right_content);}});
-$("#title, #text, #nav, #footer").hide(); $("#text").css("height","0px"); $("#line_short, #line_long").css({"width":"0px","margin":"0"}); $("#title").fadeIn(2000);
-$.when($("#title")).done(function(elements){$("#line_short").animate({width:"100%"}, 1000); 
-$.when($("#line_short")).done(function(lements){$("#text").show(); var text_h=$("#mmm").height(); $("#text").animate({height:text_h}, 1500);
-$.when($("#text")).done(function(elements){$("#nav").fadeIn(1000 );
-$.when($("#nav")).done(function(lements){$("#line_long").animate({width:"100%"}, 1500);
+var language_code=(language=="de"||language=="de-DE")?"de":"en";
+$.getJSON("content."+language_code+".json",function(json){var footer=json.footer,nav=json._nav,navigation="",prop="",i=0,spacing="",j=0;for(count in nav){i++;}for(prop in nav){j++;spacing=(i>j)?"&nbsp;&nbsp;&nbsp;&nbsp;":"";navigation+="<span id=\""+nav[prop].id+"\" class=\"\">"+nav[prop].left+"</span>"+spacing+"";}$("#nav").html(navigation);$("#footer").html(footer);$("#nav").on("click","._nav",getContentLeft);
+function getContentLeft(){var id=$(this).attr("id"),content=json._nav[id]._content,left_content="<div id=\""+id+"\">",prop="",i=0,spacing="",j=0;for(count in content){i++;}for(prop in content){j++;spacing=(i>j)?"<br/>":"";left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing+"";}left_content+="</div>";$("#left").html(left_content);$("#right,#footer").html("");$("._content").on("click",getContentRight);}
+function getContentRight(){var id=$(this).attr("id"),content=json._nav[$(this).attr("nav")]._content[id].right,right_content="<div id=\""+id+"_content\">"+content+"</div>";$("#right").html(right_content);}});
+$("#title,#text,#nav,#footer").hide();$("#text").css("height","0px");$("#line_short,#line_long").css({"width":"0px","margin":"0"});$("#title").fadeIn(2000);
+$.when($("#title")).done(function(elements){$("#line_short").animate({width:"100%"},1000);
+$.when($("#line_short")).done(function(lements){$("#text").show();$("#text").animate({height:$("#mmm").height()},1500);
+$.when($("#text")).done(function(elements){$("#nav").fadeIn(1000);
+$.when($("#nav")).done(function(lements){$("#line_long").animate({width:"100%"},1500);
 $.when($("#line_long")).done(function(elements){$("#footer").fadeIn(1000);
 $.when($("#footer")).done(function(elements){$("#nav span").addClass("_nav");
-$(document).on("mouseover mouseout",".fontface4 span",function(event){(event.type=="mouseover") ? $(this).css({"color":"#499BEA","cursor":"pointer"}) : $(this).css({"color":"#ffffff"});
+$(document).on("mouseover mouseout",".fontface4 span",function(event){(event.type=="mouseover")?$(this).css({"color":"#499BEA","cursor":"pointer"}):$(this).css({"color":"#ffffff"});
 });});});});});});});});
 </script>
 </html>
