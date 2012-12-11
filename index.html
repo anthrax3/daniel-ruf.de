@@ -5,7 +5,7 @@
 <meta name="title" content="Daniel Ruf - Crossmedia Mediengestalter" />
 <meta name="author" content="Daniel Ruf" />
 <meta name="description" content="Dies ist die offizielle Webseite des deutschen Crossmedia Mediengestalters Daniel Ruf." />
-<meta name="keywords" content="Webentwicklung, Webdesign, Grafikdesign,jQuery, HTML, Javascript, AJAX, Crossmedia, HTML5, CSS3, Java,PHP, MySQL" />
+<meta name="keywords" content="Webentwicklung, Webdesign, Grafikdesign, jQuery, HTML, Javascript, AJAX, Crossmedia, HTML5, CSS3, Java, PHP, MySQL" />
 <meta name="publisher" content="Daniel Ruf" />
 <meta name="publisher-email" content="kontakt@daniel-ruf.de" />
 <meta name="copyright" content="Daniel Ruf" />
@@ -42,7 +42,7 @@ html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 .row-fluid:after{clear:both;}
 .row-fluid [class*="span"]{display:block;width:100%;min-height:5px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;float:left;margin-left:2.127659574%;*margin-left:2.0744680846382977%;}
 .row-fluid [class*="span"]:first-child{margin-left:0;}
-.row-fluid .span12{width:99.99999998999999%;*width:99.94680850063828%;}
+.row-fluid .span12{width:100%;*width:99.94680850063828%;}
 .row-fluid .span6{width:48.93617020799999%;*width:48.88297871863829%;}
 .row-fluid .span5{width:40.425531911%;*width:40.3723404216383%;}
 .row-fluid .span3{width:23.404255317%;*width:23.3510638276383%;}
@@ -75,20 +75,18 @@ html,body,div,span,h1,h2,h3,h4,h5,h6,a,em,img,strong,b,u,i,center{margin:0;paddi
 </div>
 <script type="text/javascript">
 $(document).ready(function(){
-function calcSizes(){var width_s=$(".span6").width(),width_l=$(".span12").width();$("#fff").css({"font-size":""+width_s/5.10909091+"px"});$("#left,#right").css({"padding":""+width_l/38.3+"px"});$("#mmm").css({"font-size":""+width_s/7.20513+"px"});$("#line_long,#line_short").css({"border-radius":""+width_l/38.3/15+"px"});$("#hspace").height(width_s/7.20513/2);$("#line_long").height(width_l/57.45);$(".fontface4").css({"font-size":""+width_l/38.3+"px"});$("#line_short").height(width_s/56.267);$("#topheight").height(width_s/5.62);$("#text").height($("#mmm").height());}
-calcSizes();$(window).resize(function(){calcSizes();});
-var language=navigator.userLanguage||navigator.language;
-var language_code=(language=="de"||language=="de-DE")?"de":"en";
+function calcSizes(){var width_s=$(".span6").width(),width_l=$(".span12").width();$("#fff").css({"font-size":""+width_s/5.10909091+"px"});$("#left,#right").css({"padding":""+width_l/38.3+"px"});$("#mmm").css({"font-size":""+width_s/7.20513+"px"});$("#line_long,#line_short").css({"border-radius":""+width_l/38.3/15+"px"});$("#hspace").height(width_s/7.20513/2);$("#line_long").height(width_l/57.45);$(".fontface4").css({"font-size":""+width_l/38.3+"px"});$("#line_short").height(width_s/56.267);$("#topheight").height(width_s/5.62);$("#text").height($("#mmm").height());}calcSizes();$(window).resize(function(){calcSizes();});
+var language=navigator.userLanguage||navigator.language;var language_code=(language=="de"||language=="de-DE")?"de":"en";
 $.getJSON("content."+language_code+".json",function(json){var footer=json.footer,nav=json._nav,navigation="",prop="",i=0,spacing="",j=0;for(count in nav){i++;}for(prop in nav){j++;spacing=(i>j)?"&nbsp;&nbsp;&nbsp;&nbsp;":"";navigation+="<span id=\""+nav[prop].id+"\" class=\"\">"+nav[prop].left+"</span>"+spacing+"";}$("#nav").html(navigation);$("#footer").html(footer);$("#nav").on("click","._nav",getContentLeft);
 function getContentLeft(){var id=$(this).attr("id"),content=json._nav[id]._content,left_content="<div id=\""+id+"\">",prop="",i=0,spacing="",j=0;for(count in content){i++;}for(prop in content){j++;spacing=(i>j)?"<br/>":"";left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing+"";}left_content+="</div>";$("#left").html(left_content);$("#right,#footer").html("");$("._content").on("click",getContentRight);}
 function getContentRight(){var id=$(this).attr("id"),content=json._nav[$(this).attr("nav")]._content[id].right,right_content="<div id=\""+id+"_content\">"+content+"</div>";$("#right").html(right_content);}});
 $("#title,#text,#nav,#footer").hide();$("#text").css("height","0px");$("#line_short,#line_long").css({"width":"0px","margin":"0"});$("#title").fadeIn(2000);
-$.when($("#title")).done(function(elements){$("#line_short").animate({width:"100%"},1000);
-$.when($("#line_short")).done(function(lements){$("#text").show();$("#text").animate({height:$("#mmm").height()},1500);
-$.when($("#text")).done(function(elements){$("#nav").fadeIn(1000);
-$.when($("#nav")).done(function(lements){$("#line_long").animate({width:"100%"},1500);
-$.when($("#line_long")).done(function(elements){$("#footer").fadeIn(1000);
-$.when($("#footer")).done(function(elements){$("#nav span").addClass("_nav");
+$.when($("#title")).done(function(){$("#line_short").animate({width:"100%"},1000);
+$.when($("#line_short")).done(function(){$("#text").show();$("#text").animate({height:$("#mmm").height()},1500);
+$.when($("#text")).done(function(){$("#nav").fadeIn(1000);
+$.when($("#nav")).done(function(){$("#line_long").animate({width:"100%"},1500);
+$.when($("#line_long")).done(function(){$("#footer").fadeIn(1000);
+$.when($("#footer")).done(function(){$("#nav span").addClass("_nav");
 $(document).on("mouseover mouseout",".fontface4 span",function(event){(event.type=="mouseover")?$(this).css({"color":"#499BEA","cursor":"pointer"}):$(this).css({"color":"#ffffff"});
 });});});});});});});});
 </script>
