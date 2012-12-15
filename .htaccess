@@ -1,16 +1,11 @@
-<FilesMatch "\.(install|test|sh|.*sql)$|^(\..*|Entries.*|Repository|Root|Tag|Template)$">
+<FilesMatch "^(\..*)$">
   Order allow,deny
 </FilesMatch>
 Options -Indexes
 ErrorDocument 404 http://daniel-ruf.de
-#DirectoryIndex index.php index.html index.htm
 <IfModule mod_rewrite.c>
   RewriteEngine on
   RewriteRule "(^|/)\." - [F]
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
-  #RewriteCond %{REQUEST_FILENAME} !-f
-  #RewriteCond %{REQUEST_FILENAME} !-d
-  #RewriteCond %{REQUEST_URI} !=/favicon.ico
-  #RewriteRule ^ index.html [L]
 </IfModule>
