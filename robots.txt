@@ -1,4 +1,2 @@
-# Alle Robots ausschlieﬂen
 User-agent: *
 Disallow: /logs/
-Disallow: /usage/
