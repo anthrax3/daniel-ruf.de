@@ -9,25 +9,25 @@
 <meta name="robots" content="follow" />
 <meta name="revisit-after" content="3 days" />
 <title>Daniel Ruf - Cross Media Designer</title>
-<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="shortcut icon" href="./favicon.ico" />
 <style>
 @font-face {
-    font-family: 'CaviarDreamsRegular';
-    src: url('CaviarDreams-webfont.eot');
-    src: url('CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
-         url('CaviarDreams-webfont.woff') format('woff'),
-         url('CaviarDreams-webfont.ttf') format('truetype'),
-         url('CaviarDreams-webfont.svg#CaviarDreamsRegular') format('svg');
+    font-family: 'SourceSansProExtraLight';
+    src: url('SourceSansPro-ExtraLight-webfont.eot');
+    src: url('SourceSansPro-ExtraLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SourceSansPro-ExtraLight-webfont.woff') format('woff'),
+         url('SourceSansPro-ExtraLight-webfont.ttf') format('truetype'),
+         url('SourceSansPro-ExtraLight-webfont.svg#SourceSansProExtraLight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'LatoBold';
-    src: url('Lato-Bol-webfont.eot');
-    src: url('Lato-Bol-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Lato-Bol-webfont.woff') format('woff'),
-         url('Lato-Bol-webfont.ttf') format('truetype'),
-         url('Lato-Bol-webfont.svg#LatoBold') format('svg');
+    font-family: 'SourceSansProSemibold';
+    src: url('SourceSansPro-Semibold-webfont.eot');
+    src: url('SourceSansPro-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SourceSansPro-Semibold-webfont.woff') format('woff'),
+         url('SourceSansPro-Semibold-webfont.ttf') format('truetype'),
+         url('SourceSansPro-Semibold-webfont.svg#SourceSansProSemibold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -44,9 +44,9 @@ html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 .container-fluid{padding-right:100px;padding-left:100px;}.container-fluid:before,.container-fluid:after{display:table;content:"";line-height:0;}.container-fluid:after{clear:both;}
 body{background:#000000;-webkit-tap-highlight-color:rgba(0,0,0,0);line-height:1;cursor:default;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
 .fontface1,.fontface2,.fontface4{color:#FFFFFF;text-transform:uppercase;letter-spacing:0;}
-.fontface1{font:110px 'CaviarDreamsRegular',Arial,sans-serif;text-align:center;}
-.fontface2{font:77px 'CaviarDreamsRegular',Arial,sans-serif;text-align:center;}
-.fontface4{font:30px 'LatoBold',Arial,sans-serif;}
+.fontface1{font:110px 'SourceSansProExtraLight',Arial,sans-serif;text-align:center;}
+.fontface2{font:77px 'SourceSansProExtraLight',Arial,sans-serif;text-align:center;}
+.fontface4{font:30px 'SourceSansProSemibold',Arial,sans-serif;}
 .fontface4 span._nav:hover,.fontface4 span._content:hover{color:#499BEA;cursor:pointer;}
 .highlight,a,a:link,a:visited,a:hover,a:active,a:focus{color:#499BEA;display:inline;outline:none;text-decoration:none;}
 html,body,div,span,h1,h2,h3,a,strong,b,u,i{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
@@ -70,10 +70,10 @@ html,body,div,span,h1,h2,h3,a,strong,b,u,i{margin:0;padding:0;border:0;font-size
 </div>
 <script type="text/javascript">
 $(function(){
-function calcSizes(){var width_s=$(".span6").width(),width_l=$(".span12").width();$("#fff").css({"font-size":""+width_s/5.10909091+"px"});$("#left,#right").css({"padding":""+width_l/38.3+"px"});$("#mmm").css({"font-size":""+width_s/7.20513+"px"});$("#line_long,#line_short").css({"border-radius":""+width_l/38.3/15+"px"});$("#hspace").height(width_s/7.20513/2);$("#line_long").height(width_l/57.45);$(".fontface4").css({"font-size":""+width_l/38.3+"px"});$("#line_short").height(width_s/56.267);$("#topheight").height(width_s/5.62);$("#text").height($("#mmm").height());}calcSizes();$(window).resize(function(){calcSizes();});
+function calcSizes(){var width_s=$(".span6").width(),width_l=$(".span12").width();$("#fff").css({"font-size":width_s/4.683333334166667+"px"});$("#left,#right").css({"padding":width_l/34.81818181818182+"px"});$("#mmm").css({"font-size":width_s/6.6047025+"px"});$("#line_long,#line_short").css({"border-radius":width_l/34.81818181818182/15+"px"});$("#hspace").height(width_s/6.6047025/2);$("#line_long").height(width_l/57.45);$(".fontface4").css({"font-size":width_l/34.81818181818182+"px"});$("#line_short").height(width_s/56.267);$("#topheight").height(width_s/5.62);$("#text").height($("#mmm").height());}calcSizes();$(window).resize(function(){calcSizes();});
 var language=navigator.userLanguage||navigator.language;
-$.getJSON((language=="de"||language=="de-DE")?"content.de.json":"content.en.json",function(json){var footer=json.footer,nav=json._nav,navigation="",prop="",i=0,spacing="",j=0;for(count in nav){i++;}for(prop in nav){j++;spacing=(i>j)?"&nbsp;&nbsp;&nbsp;&nbsp;":"";navigation+="<span id=\""+nav[prop].id+"\" class=\"\">"+nav[prop].left+"</span>"+spacing+"";}$("#nav").html(navigation);$("#footer").html(footer);$("#nav").on("click","._nav",getContentLeft);
-function getContentLeft(){var id=$(this).attr("id"),content=json._nav[id]._content,left_content="<div id=\""+id+"\">",prop="",i=0,spacing="",j=0;for(count in content){i++;}for(prop in content){j++;spacing=(i>j)?"<br/>":"";left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing+"";}left_content+="</div>";$("#left").html(left_content);$("#right,#footer").html("");$("._content").on("click",getContentRight);}
+$.getJSON((language=="de"||language=="de-DE")?"content.de.json":"content.en.json",function(json){var footer=json.footer,nav=json._nav,navigation="",prop="",i=0,spacing="",j=0;for(count in nav){i++;}for(prop in nav){j++;spacing=(i>j)?"&nbsp;&nbsp;&nbsp;&nbsp;":"";navigation+="<span id=\""+nav[prop].id+"\" class=\"\">"+nav[prop].left+"</span>"+spacing;}$("#nav").html(navigation);$("#footer").html(footer);$("#nav").on("click","._nav",getContentLeft);
+function getContentLeft(){var id=$(this).attr("id"),content=json._nav[id]._content,left_content="<div id=\""+id+"\">",prop="",i=0,spacing="",j=0;for(count in content){i++;}for(prop in content){j++;spacing=(i>j)?"<br/>":"";left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing;}left_content+="</div>";$("#left").html(left_content);$("#right,#footer").html("");$("._content").on("click",getContentRight);}
 function getContentRight(){var id=$(this).attr("id"),content=json._nav[$(this).attr("nav")]._content[id].right,right_content="<div id=\""+id+"_content\">"+content+"</div>";$("#right").html(right_content);}});
 $("#title,#text,#nav,#footer").hide();$("#text").css("height","0px");$("#line_short,#line_long").css({"width":"0px","margin":"0"});$("#title").fadeIn(2000);
 $.when($("#title")).done(function(){$("#line_short").animate({width:"100%"},1000);
