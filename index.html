@@ -75,13 +75,12 @@ var language=navigator.userLanguage||navigator.language;
 $.getJSON((language=="de"||language=="de-DE")?"content.de.json":"content.en.json",function(json){var footer=json.footer,nav=json._nav,navigation="",prop="",i=0,spacing="",j=0;for(count in nav){i++;}for(prop in nav){j++;spacing=(i>j)?"&nbsp;&nbsp;&nbsp;&nbsp;":"";navigation+="<span id=\""+nav[prop].id+"\" class=\"\">"+nav[prop].left+"</span>"+spacing;}$("#nav").html(navigation);$("#footer").html(footer);$("#nav").on("click","._nav",getContentLeft);
 function getContentLeft(){var id=$(this).attr("id"),content=json._nav[id]._content,left_content="<div id=\""+id+"\">",prop="",i=0,spacing="",j=0;for(count in content){i++;}for(prop in content){j++;spacing=(i>j)?"<br/>":"";left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing;}left_content+="</div>";$("#left").html(left_content);$("#right,#footer").html("");$("._content").on("click",getContentRight);}
 function getContentRight(){var id=$(this).attr("id"),content=json._nav[$(this).attr("nav")]._content[id].right,right_content="<div id=\""+id+"_content\">"+content+"</div>";$("#right").html(right_content);}});
-$("#title,#text,#nav,#footer").hide();$("#text").css("height","0px");$("#line_short,#line_long").css({"width":"0px","margin":"0"});$("#title").fadeIn(2000);
-$.when($("#title")).done(function(){$("#line_short").animate({width:"100%"},1000);
-$.when($("#line_short")).done(function(){$("#text").show();$("#text").animate({height:$("#mmm").height()},1500);
-$.when($("#text")).done(function(){$("#nav").fadeIn(1000);
-$.when($("#nav")).done(function(){$("#line_long").animate({width:"100%"},1500);
-$.when($("#line_long")).done(function(){$("#footer").fadeIn(1000);
-$.when($("#footer")).done(function(){$("#nav span").addClass("_nav");
+$.when($("#title,#text,#nav,#footer").hide(),$("#text").css("height","0px"),$("#line_short,#line_long").css({"width":"0px","margin":"0"}),$("#title").fadeIn(2000)).done(function(){
+$.when($("#line_short").animate({width:"100%"},1000)).done(function(){
+$.when($("#text").show(),$("#text").animate({height:$("#mmm").height()},1500)).done(function(){
+$.when($("#nav").fadeIn(1000)).done(function(){
+$.when($("#line_long").animate({width:"100%"},1500)).done(function(){
+$.when($("#footer").fadeIn(1000)).done(function(){$("#nav span").addClass("_nav");
 });});});});});});});
 </script>
 </body>
