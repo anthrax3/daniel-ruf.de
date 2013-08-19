@@ -45,11 +45,11 @@ body{margin:0;}
 .col-lg-6{width:50%;}
 .col-lg-12{width:100%;}
 body{background:#000000;-webkit-tap-highlight-color:rgba(0,0,0,0);line-height:1;cursor:default;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
-.fontface1,.fontface2,.fontface4{color:#FFFFFF;text-transform:uppercase;letter-spacing:0;}
-.fontface1{font:110px 'SourceSansProExtraLight',Arial,sans-serif;text-align:center;}
-.fontface2{font:77px 'SourceSansProExtraLight',Arial,sans-serif;text-align:center;}
-.fontface4{font:30px 'SourceSansProSemibold',Arial,sans-serif;}
-.fontface4 span._nav:hover,.fontface4 span._content:hover{color:#499BEA;cursor:pointer;}
+.ff1,.ff2,.ff4{color:#FFFFFF;text-transform:uppercase;letter-spacing:0;}
+.ff1{font:110px 'SourceSansProExtraLight',Arial,sans-serif;text-align:center;}
+.ff2{font:77px 'SourceSansProExtraLight',Arial,sans-serif;text-align:center;}
+.ff4{font:30px 'SourceSansProSemibold',Arial,sans-serif;}
+.ff4 span._nav:hover,.ff4 span._content:hover{color:#499BEA;cursor:pointer;}
 .highlight,a,a:link,a:visited,a:hover,a:active,a:focus{color:#499BEA;display:inline;outline:none;text-decoration:none;}
 html,body,div,span,h1,h2,h3,a,strong,b,u,i{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 #nav,#fff,#mmm{white-space:nowrap;}
@@ -62,27 +62,27 @@ html,body,div,span,h1,h2,h3,a,strong,b,u,i{margin:0;padding:0;border:0;font-size
 </head>
 <body>
 <div class="container">
-<div class="row"><div class="col-lg-3"></div><div class="col-lg-6"><div id="topheight" style="height:100px;"></div><div class="fontface1" id="title"><h1 class="fontface1" id="fff">Daniel Ruf</h1></div></div><div class="col-lg-3"></div></div>
+<div class="row"><div class="col-lg-3"></div><div class="col-lg-6"><div id="toph" style="height:100px;"></div><div class="ff1" id="title"><h1 class="ff1" id="fff">Daniel Ruf</h1></div></div><div class="col-lg-3"></div></div>
 <div class="row"><div class="col-lg-3"></div><div class="col-lg-6"><div id="line_short"></div></div><div class="col-lg-3"></div></div>
-<div class="row"><div class="col-lg-3"></div><div class="col-lg-6"><div class="fontface2" id="text"><h2 class="fontface2" id="mmm">Mediadesigner</h2></div></div><div class="col-lg-3"></div></div>
-<div class="row"><div class="col-lg-12"><div id="hspace"></div><div style="text-align:center;" class="fontface4" id="nav"></div></div></div>
+<div class="row"><div class="col-lg-3"></div><div class="col-lg-6"><div class="ff2" id="text"><h2 class="ff2" id="mmm">Mediadesigner</h2></div></div><div class="col-lg-3"></div></div>
+<div class="row"><div class="col-lg-12"><div id="hspace"></div><div style="text-align:center;" class="ff4" id="nav"></div></div></div>
 <div class="row"><div class="col-lg-12"><div id="line_long"></div></div></div>
-<div class="row"><div class="col-lg-5"><div style="float:left; border:0px; text-align:left; padding:20px;" class="fontface4 " id="left"></div></div><div class="col-lg-2"></div><div class="col-lg-5"><div style="float:right; text-align:right; border:0px; padding:20px;" class="fontface4 " id="right"></div></div></div>
-<div class="row"><div class="col-lg-12"><div style="text-align:center;" class="fontface4"  id="footer">Bitte aktiviere Javascript<br/><br/>Impressum:<br/>Daniel Ruf<br/>Otzbergring 27<br/>64846 Gross-Zimmern<br/>0176 69 112 848<br /></div></div></div>
+<div class="row"><div class="col-lg-5"><div style="text-align:left;padding:20px;" class="ff4 " id="left"></div></div><div class="col-lg-2"></div><div class="col-lg-5"><div style="text-align:right;padding:20px;" class="ff4 " id="right"></div></div></div>
+<div class="row"><div class="col-lg-12"><div style="text-align:center;" class="ff4"  id="footer">Bitte aktiviere Javascript<br/><br/>Impressum:<br/>Daniel Ruf<br/>Otzbergring 27<br/>64846 Gross-Zimmern<br/>0176 69 112 848<br /></div></div></div>
 </div>
 <script type="text/javascript">
 $(function(){
-function calcSizes(){var width_s=$(".col-lg-6").width(),width_l=$(".col-lg-12").width();$("#fff").css({"font-size":width_s/4.70648318895+"px"});$("#left,#right").css({"padding":width_l/34.81818181818182+"px"});$("#mmm").css({"font-size":width_s/6.63734973923+"px"});$("#line_long,#line_short").css({"border-radius":width_l/34.81818181818182/15+"px"});$("#hspace").height(width_s/6.63734973923/2);$("#line_long").height(width_l/57.45);$(".fontface4").css({"font-size":width_l/34.81818181818182+"px"});$("#line_short").height(width_s/56.5451294403);$("#topheight").height(width_s/5.64777982574);$("#text").height($("#mmm").height());}calcSizes();$(window).resize(function(){calcSizes();});
-var language=navigator.userLanguage||navigator.language;
-$.getJSON((language=="de"||language=="de-DE")?"content.de.json":"content.en.json",function(json){var footer=json.footer,nav=json._nav,navigation="",prop="",i=0,spacing="",j=0;for(count in nav){i++;}for(prop in nav){j++;spacing=(i>j)?"&nbsp;&nbsp;&nbsp;&nbsp;":"";navigation+="<span id=\""+nav[prop].id+"\" class=\"\">"+nav[prop].left+"</span>"+spacing;}$("#nav").html(navigation);$("#footer").html(footer);$("#nav").on("click","._nav",getContentLeft);
-function getContentLeft(){var id=$(this).attr("id"),content=json._nav[id]._content,left_content="<div id=\""+id+"\">",prop="",i=0,spacing="",j=0;for(count in content){i++;}for(prop in content){j++;spacing=(i>j)?"<br/>":"";left_content+="<span id=\""+content[prop].id+"\" nav=\""+id+"\" class=\"_content\">"+content[prop].left+"</span>"+spacing;}left_content+="</div>";$("#left").html(left_content);$("#right,#footer").html("");$("._content").on("click",getContentRight);}
-function getContentRight(){var id=$(this).attr("id"),content=json._nav[$(this).attr("nav")]._content[id].right,right_content="<div id=\""+id+"_content\">"+content+"</div>";$("#right").html(right_content);}});
-$.when($("#title,#text,#nav,#footer").hide(),$("#text").css("height","0px"),$("#line_short,#line_long").css({"width":"0px","margin":"0"}),$("#title").fadeIn(2000)).done(function(){
-$.when($("#line_short").animate({width:"100%"},1000)).done(function(){
-$.when($("#text").show(),$("#text").animate({height:$("#mmm").height()},1500)).done(function(){
-$.when($("#nav").fadeIn(1000)).done(function(){
-$.when($("#line_long").animate({width:"100%"},1500)).done(function(){
-$.when($("#footer").fadeIn(1000)).done(function(){$("#nav span").addClass("_nav");
+function cs(){var rl=36,rs=6.725,ws=$(".col-lg-6").width(),wl=$(".col-lg-12").width();$("#fff").css({"font-size":ws/4.75+"px"});$("#left,#right").css({"padding":wl/rl+"px"});$("#mmm").css({"font-size":ws/rs+"px"});$("#line_long,#line_short").css({"border-radius":wl/rl/15+"px"});$("#hspace").height(ws/rs/2);$("#line_long").height(wl/57.45);$(".ff4").css({"font-size":wl/rl+"px"});$("#line_short").height(ws/60);$("#toph").height(ws/5.625);$("#text").height($("#mmm").height());}cs();$(window).resize(function(){cs();});
+var l=navigator.userLanguage||navigator.language,t15=1500,t1=1000,t2=2000;
+$.getJSON((l=="de"||l=="de-DE")?"content.de.json":"content.en.json",function(json){var f=json.footer,n=json._nav,nav="",p="",s="",j=0,i=Object.keys(n).length;for(p in n){j++;s=(i>j)?"&nbsp;&nbsp;&nbsp;&nbsp;":"";nav+="<span id=\""+n[p].id+"\" class=\"\">"+n[p].left+"</span>"+s;}$("#nav").html(nav);$("#footer").html(f);$("#nav").on("click","._nav",gcl);
+function gcl(){var id=$(this).attr("id"),c=json._nav[id]._content,lc="<div id=\""+id+"\">",p="",s="",j=0,i=Object.keys(c).length;for(p in c){j++;s=(i>j)?"<br/>":"";lc+="<span id=\""+c[p].id+"\" nav=\""+id+"\" class=\"_content\">"+c[p].left+"</span>"+s;}lc+="</div>";$("#left").html(lc);$("#right,#footer").html("");$("._content").on("click",gcr);}
+function gcr(){var id=$(this).attr("id"),c=json._nav[$(this).attr("nav")]._content[id].right,rc="<div id=\""+id+"_content\">"+c+"</div>";$("#right").html(rc);}});
+$.when($("#title,#text,#nav,#footer").hide(),$("#text").css("height","0px"),$("#line_short,#line_long").css({"width":"0px","margin":"0"}),$("#title").fadeIn(t2)).done(function(){
+$.when($("#line_short").animate({width:"100%"},t1)).done(function(){
+$.when($("#text").show(),$("#text").animate({height:$("#mmm").height()},t15)).done(function(){
+$.when($("#nav").fadeIn(t1)).done(function(){
+$.when($("#line_long").animate({width:"100%"},t15)).done(function(){
+$.when($("#footer").fadeIn(t1)).done(function(){$("#nav span").addClass("_nav");
 });});});});});});});
 </script>
 </body>
