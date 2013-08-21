@@ -1,4 +1,4 @@
-Create your own small dynamic portfolio based on this project
+This is the sourcecode of my website
 <br/><br/>
 Optimized for loading speed (less requests)
 <br/><br/>
