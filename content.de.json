@@ -16,7 +16,7 @@
 				"grafik": {"id": "grafik", "left": "GRAFIKDESIGN", "right": "GRAFIKDESIGN<br/><br/>BLENDER, FONTFORGE, ILLUSTRATOR, INDESIGN, INKSCAPE, PHOTOSHOP, QUARK XPRESS, SCRIBUS, WACOM"},
 				"itsecurity": {"id": "itsecurity", "left": "IT-SICHERHEIT", "right": "IT-SICHERHEIT<br/><br/>DATENRETTUNG, SYSTEM-OPTIMIERUNG, VIREN- UND MALWARE-ENTFERNUNG, WEBSEITENSCHUTZ"},
 				"projectmanagement": {"id": "projectmanagement", "left": "PROJEKTMANAGEMENT", "right": "PROJEKTMANAGEMENT<br/><br/>AGILE, GANTT CHART, SCRUM"},
-				"softwaredev": {"id": "softwaredev", "left": "SOFTWAREENTWICKLUNG", "right": "SOFTWARE-ENTWICKLUNG<br/><br/>AUTOHOTKEY, AUTOIT, C#, GIT, JAVA, OBJECTIVE-C, R, XCODE"},
+				"softwaredev": {"id": "softwaredev", "left": "SOFTWAREENTWICKLUNG", "right": "SOFTWAREENTWICKLUNG<br/><br/>AUTOHOTKEY, AUTOIT, C#, GIT, JAVA, OBJECTIVE-C, R, XCODE"},
 				"webdesign": {"id": "webdesign", "left": "WEBDESIGN", "right": "WEBDESIGN<br/><br/>CSS, CSS3, SVG"},
 				"webdev": {"id": "webdev", "left": "WEBENTWICKLUNG", "right": "WEBENTWICKLUNG<br/><br/>AJAX, COFFEESCRIPT, CONTAO, DRUPAL, HTML5, JAVASCRIPT, JQUERY, JSON, MVC, MYSQL, OOP, OXID ESHOP, PHP, RUBY ON RAILS, UX, WORDPRESS, X3D, ZEND"}
 			}
