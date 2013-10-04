@@ -33,8 +33,8 @@
 				"gamerinside": {"id": "gamerinside", "left": "THEGAMERINSIDE.COM", "right":"WEBENTWICKLUNG UND BERATUNG IM BEREICH WEBENTWICKLUNG, ERSTELLEN DER DEUTSCHEN ÜBERSETZUNG IN ZUSAMMENARBEIT MIT EINER PROFESSIONELLEN ÜBERSETZERIN<br/><a href=\"http://thegamerinside.com\" target=\"_blank\">THEGAMERINSIDE.COM</a>"}
 			}
 		},
-		"impressum": {
-			"left": "IMPRESSUM", "id": "impressum", 
+		"kontakt": {
+			"left": "KONTAKT", "id": "kontakt", 
 			"_content": {
 				"adresse": {"id": "adresse", "left": "ADRESSE", "right": "DANIEL RUF<br/>OTZBERGRING 27<br/>64846 GROSS-ZIMMERN" },
 				"email": {"id": "email", "left": "EMAIL", "right": "KONTAKT@DANIEL-RUF.DE"},

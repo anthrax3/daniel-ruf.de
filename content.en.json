@@ -34,8 +34,8 @@
 				
 			}
 		},
-		"impressum": {
-			"left": "IMPRESSUM", "id": "impressum", 
+		"contact": {
+			"left": "CONTACT", "id": "contact", 
 			"_content": {
 				"adresse": {"id": "adresse", "left": "ADDRESS", "right": "DANIEL RUF<br/>OTZBERGRING 27<br/>64846 GROSS-ZIMMERN<br/>GERMANY" },
 				"email": {"id": "email", "left": "EMAIL", "right": "KONTAKT@DANIEL-RUF.DE"},
