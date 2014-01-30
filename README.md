@@ -5,4 +5,4 @@ Optimized for speed
 Achieved with minimal setup (and structured JSON files - 1 for each language) 
 
 Custom jQuery build
-`grunt custom:-ajax/script,-ajax/jsonp,-ajax/parseXML,-ajax/parseJSON,-deprecated,-offset,-wrap,-exports/amd`
+`grunt custom:-ajax/script,-ajax/jsonp,-ajax/parseXML,-deprecated,-offset,-wrap,-exports/amd`
