@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# REVISON 1
+# REVISON 2
 ./content.de.json
 ./content.en.json
 ./SourceSansPro-ExtraLight-webfont.eot
@@ -10,3 +10,5 @@ CACHE MANIFEST
 ./SourceSansPro-Semibold-webfont.svg
 ./SourceSansPro-Semibold-webfont.ttf
 ./SourceSansPro-Semibold-webfont.woff
+./impressum.html
+./imprint.html
