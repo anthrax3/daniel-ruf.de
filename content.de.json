@@ -1,7 +1,7 @@
 {
 	"id": "file",
 	"footer": "HERZLICH WILLKOMMEN AUF DANIEL-RUF.DE",
-	"impressum": "<a href=\"impressum.html\" target=\"_blank\">Impressum</a>",
+	"impressum": "<a href=\"impressum.html\" target=\"_blank\">IMPRESSUM</a>",
 	"_nav": {
 		"about": {
 			"left": "ÜBER MICH", "id": "about",

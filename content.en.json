@@ -1,7 +1,7 @@
 {
 	"id": "file",
 	"footer": "WELCOME ON DANIEL-RUF.DE",
-	"impressum": "<a href=\"imprint.html\" target=\"_blank\">Imprint</a>",
+	"impressum": "<a href=\"legal.html\" target=\"_blank\">LEGAL INFORMATION</a>",
 	"_nav": {
 		"about": {
 			"left": "ABOUT ME", "id": "about",
