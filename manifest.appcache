@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# REVISON 13
+# REVISON 14
 ./index.html
 ./content.de.json
 ./content.en.json
@@ -13,3 +13,4 @@ CACHE MANIFEST
 ./SourceSansPro-Semibold-webfont.woff
 ./impressum.html
 ./legal.html
+./pgpkey.txt

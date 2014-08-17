@@ -38,7 +38,7 @@
 			"left": "KONTAKT", "id": "kontakt", 
 			"_content": {
 				"adresse": {"id": "adresse", "left": "ADRESSE", "right": "DANIEL RUF<br/>OTZBERGRING 27<br/>64846 GROSS-ZIMMERN" },
-				"email": {"id": "email", "left": "EMAIL", "right": "KONTAKT@DANIEL-RUF.DE"},
+				"email": {"id": "email", "left": "EMAIL", "right": "KONTAKT@DANIEL-RUF.DE<br/><a href=\"/pgpkey.txt\" target=\"_blank\">PGP KEY</a>"},
 				"telefon": {"id": "telefon", "left": "TELEFON", "right": "0176 69 112 848 (MOBIL)"},
 				"github": {"id": "github", "left": "GITHUB", "right": "<a href=\"https://github.com/DanielRuf\" target=\"_blank\">GITHUB PROFIL</a>"},
 				"linkedin": {"id": "linkedin", "left": "LINKEDIN", "right": "<a href=\"http://www.linkedin.com/in/danielruf\" target=\"_blank\">LINKEDIN PROFIL</a>"},
