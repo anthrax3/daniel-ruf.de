@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# REVISON 16
+# REVISON 19
 ./favicon.ico
 ./index.html
 ./content.de.json
@@ -15,3 +15,4 @@ CACHE MANIFEST
 ./impressum.html
 ./legal.html
 ./pgpkey.txt
+./cdn-cgi/cl/img.gif
