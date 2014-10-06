@@ -5,13 +5,14 @@ Options -Indexes
 AddType text/cache-manifest appcache
 AddType 'text/html; charset=UTF-8' html
 AddCharset UTF-8 .html
-ErrorDocument 404 http://daniel-ruf.de
+ErrorDocument 404 https://daniel-ruf.de
 <IfModule mod_rewrite.c>
   RewriteEngine on
   RewriteRule "(^|/)\." - [F]
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 </IfModule>
 <IfModule mod_headers.c>
+Header set Strict-Transport-Security "max-age=16070400; includeSubDomains"
 Header set Vary Accept-Encoding
 </IfModule>
