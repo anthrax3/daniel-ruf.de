@@ -1,18 +1,18 @@
 CACHE MANIFEST
-# REVISON 21
-./favicon.ico
-./index.html
-./content.de.json
-./content.en.json
-./SourceSansPro-ExtraLight-webfont.eot
-./SourceSansPro-ExtraLight-webfont.svg
-./SourceSansPro-ExtraLight-webfont.ttf
-./SourceSansPro-ExtraLight-webfont.woff
-./SourceSansPro-Semibold-webfont.eot
-./SourceSansPro-Semibold-webfont.svg
-./SourceSansPro-Semibold-webfont.ttf
-./SourceSansPro-Semibold-webfont.woff
-./impressum.html
-./legal.html
-./pgpkey.txt
-./cdn-cgi/cl/img.gif
+# REVISON 22
+favicon.ico
+index.html
+content.de.json
+content.en.json
+SourceSansPro-ExtraLight-webfont.eot
+SourceSansPro-ExtraLight-webfont.svg
+SourceSansPro-ExtraLight-webfont.ttf
+SourceSansPro-ExtraLight-webfont.woff
+SourceSansPro-Semibold-webfont.eot
+SourceSansPro-Semibold-webfont.svg
+SourceSansPro-Semibold-webfont.ttf
+SourceSansPro-Semibold-webfont.woff
+impressum.html
+legal.html
+pgpkey.txt
+cdn-cgi/cl/img.gif
