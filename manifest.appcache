@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# REVISON 25
+# REVISON 26
 favicon.ico
 index.html
 content.de.json
@@ -14,5 +14,5 @@ SourceSansPro-Semibold-webfont.ttf
 SourceSansPro-Semibold-webfont.woff
 impressum.html
 legal.html
-pgpkey.txt
+danielruf.asc
 cdn-cgi/cl/img.gif
