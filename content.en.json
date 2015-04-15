@@ -46,7 +46,7 @@
 				"telefon": {"id": "telefon", "left": "TELEPHONE", "right": "+49 0176 69 112 848 (MOBILE)"},
 				"github": {"id": "github", "left": "GITHUB", "right": "<a href=\"https://github.com/DanielRuf\" target=\"_blank\">GITHUB PROFILE</a>"},
 				"linkedin": {"id": "linkedin", "left": "LINKEDIN", "right": "<a href=\"http://www.linkedin.com/in/danielruf\" target=\"_blank\">LINKEDIN PROFILE</a>"},
-				"stackoverflow": {"id": "stackoverflow", "left": "STACKOVERFLOW", "right": "<a href=\"http://careers.stackoverflow.com/danielruf\" target=\"_blank\">STACKOVERFLOW PROFILE</a>"},
+				"stackoverflow": {"id": "stackoverflow", "left": "STACKOVERFLOW", "right": "<a href=\"http://stackoverflow.com/users/753676/daniel-ruf\" target=\"_blank\">STACKOVERFLOW PROFILE</a>"},
 				"xing": {"id": "xing", "left": "XING", "right": "<a href=\"https://www.xing.com/profile/Daniel_Ruf13\" target=\"_blank\">XING PROFILE</a>"}
 			}
 		}
