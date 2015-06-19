@@ -41,7 +41,7 @@
 		"kontakt": {
 			"left": "KONTAKT", "id": "kontakt", 
 			"_content": {
-				"adresse": {"id": "adresse", "left": "ADRESSE", "right": "DANIEL RUF<br/>SCHELMENTALSTRASSE 3<br/>69488 BIRKENAU" },
+				"adresse": {"id": "adresse", "left": "ADRESSE", "right": "DANIEL RUF<br/>SCHELMENTALSTRASSE 3<br/>69488 BIRKENAU<br/>DEUTSCHLAND" },
 				"email": {"id": "email", "left": "EMAIL", "right": "KONTAKT@DANIEL-RUF.DE<br/><a href=\"/danielruf.asc\" target=\"_blank\">PGP KEY</a>"},
 				"telefon": {"id": "telefon", "left": "TELEFON", "right": "0176 69 112 848 (MOBIL)"},
 				"github": {"id": "github", "left": "GITHUB", "right": "<a href=\"https://github.com/DanielRuf\" target=\"_blank\">GITHUB PROFIL</a>"},
