@@ -1,5 +1,5 @@
 <FilesMatch "^(\..*)$">
-  Order allow,deny
+Order allow,deny
 </FilesMatch>
 Options -Indexes
 AddType text/cache-manifest appcache
@@ -7,12 +7,12 @@ AddType 'text/html; charset=UTF-8' html
 AddCharset UTF-8 .html
 ErrorDocument 404 https://daniel-ruf.de
 <IfModule mod_rewrite.c>
-  RewriteEngine on
-  RewriteRule "(^|/)\." - [F]
-  RewriteCond %{HTTP_HOST} 85.13.149.245
-  RewriteRule .* - [F]
-  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+RewriteEngine on
+RewriteRule "(^|/)\." - [F]
+RewriteCond %{HTTP_HOST} 85.13.149.245
+RewriteRule .* - [F]
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 </IfModule>
 <IfModule mod_headers.c>
 ServerSignature Off
