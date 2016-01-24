@@ -9,10 +9,18 @@ ErrorDocument 404 https://daniel-ruf.de
 <IfModule mod_rewrite.c>
   RewriteEngine on
   RewriteRule "(^|/)\." - [F]
+  RewriteCond %{HTTP_HOST} 85.13.149.245
+  RewriteRule .* - [F]
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 </IfModule>
 <IfModule mod_headers.c>
-Header set Strict-Transport-Security "max-age=16070400; includeSubDomains"
-Header set Vary Accept-Encoding
+ServerSignature Off
+Header always set Strict-Transport-Security "max-age=16070400; includeSubDomains"
+Header always set Vary Accept-Encoding
+Header always set X-Xss-Protection "1; mode=block"
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Content-Security-Policy "default-src https: data: 'unsafe-inline' 'unsafe-eval'"
+Header always set Public-Key-Pins "pin-sha256=\"EQjnVs5Ye7Wmzw7EkiQfzjmAiDuk1d/kURLB/l9iD38=\"; max-age=5184000; includeSubDomains"
 </IfModule>
