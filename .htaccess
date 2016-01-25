@@ -21,6 +21,6 @@ Header always set Vary Accept-Encoding
 Header always set X-Xss-Protection "1; mode=block"
 Header always set X-Content-Type-Options "nosniff"
 Header always set X-Frame-Options "SAMEORIGIN"
-Header always set Content-Security-Policy "default-src https: data: 'unsafe-inline' 'unsafe-eval'"
+Header always set Content-Security-Policy "default-src 'self' 'unsafe-inline'"
 Header always set Public-Key-Pins "pin-sha256=\"EQjnVs5Ye7Wmzw7EkiQfzjmAiDuk1d/kURLB/l9iD38=\"; max-age=5184000; includeSubDomains"
 </IfModule>
