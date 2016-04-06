@@ -1,6 +1,6 @@
 This is the sourcecode of my website  
-Optimized for speed    
-Achieved with minimal setup (and structured JSON files - 1 for each language) 
+Optimized for speed  
+Achieved with minimal setup (and structured JSON files - 1 for each language)  
 
 My PGP Public Key ID is C39742FEA5BD9DE2  
 key size: 2048  
