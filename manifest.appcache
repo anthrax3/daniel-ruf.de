@@ -1,17 +1,11 @@
 CACHE MANIFEST
-# REVISION 40
+# REVISION 41
 favicon.ico
-index.html
-content.de.json
-content.en.json
 SourceSansPro-ExtraLight-webfont.eot
 SourceSansPro-ExtraLight-webfont.svg
 SourceSansPro-ExtraLight-webfont.ttf
 SourceSansPro-ExtraLight-webfont.woff
-SourceSansPro-Semibold-webfont.eot
-SourceSansPro-Semibold-webfont.svg
-SourceSansPro-Semibold-webfont.ttf
-SourceSansPro-Semibold-webfont.woff
+index.html
 impressum.html
 legal.html
 danielruf.asc
