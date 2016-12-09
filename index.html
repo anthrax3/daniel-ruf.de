@@ -53,19 +53,19 @@ html,body,#container{height:100%}html{-webkit-text-size-adjust:100%;-ms-text-siz
 <div id="container">
 <div class="row"><h1 id="title">Daniel Ruf</h1></div>
 <div class="row"><div id="content">
-<a href="https://github.com/DanielRuf" target="blank">GitHub</a><br/>
-<a href="https://www.linkedin.com/in/danielruf" target="_blank">LinkedIn</a><br/>
-<a href="https://stackoverflow.com/cv/danielruf" target="_blank">StackOverflow</a><br/>
-<a href="https://www.xing.com/profile/Daniel_Ruf13" target="_blank">XING</a><br/><br/>
-<a href="https://daniel-ruf.de/danielruf.asc" target="_blank">Public PGP Key</a>
-</div><br/><a id="impress" href="legal.html" target="_blank">legal information</a></div>
+<a href="https://github.com/DanielRuf" target="blank" rel="noopener noreferrer">GitHub</a><br/>
+<a href="https://www.linkedin.com/in/danielruf" target="_blank" rel="noopener noreferrer">LinkedIn</a><br/>
+<a href="https://stackoverflow.com/cv/danielruf" target="_blank" rel="noopener noreferrer">StackOverflow</a><br/>
+<a href="https://www.xing.com/profile/Daniel_Ruf13" target="_blank" rel="noopener noreferrer">XING</a><br/><br/>
+<a href="https://daniel-ruf.de/danielruf.asc" target="_blank" rel="noopener noreferrer">Public PGP Key</a>
+</div><br/><a id="impress" href="legal.html" target="_blank" rel="noopener noreferrer">legal information</a></div>
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   document.querySelector("#container").style.display = "block";
 
   var l = navigator.userLanguage || navigator.language;
-  if (l === ("de" || "de-DE")) {document.querySelector("html").setAttribute("lang", "de");document.querySelector("#impress").outerHTML='<a id="impress" href="impressum.html" target="_blank">Impressum</a>';}
+  if (l === ("de" || "de-DE")) {document.querySelector("html").setAttribute("lang", "de");document.querySelector("#impress").outerHTML='<a id="impress" href="impressum.html" target="_blank" rel="noopener noreferrer">Impressum</a>';}
 
   function resetOpacity(){
     var elements = document.querySelectorAll("#title,#content,#impress");
