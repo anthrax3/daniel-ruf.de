@@ -18,7 +18,7 @@ RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 </IfModule>
 <IfModule mod_headers.c>
 ServerSignature Off
-Header always set Strict-Transport-Security "max-age=16070400; includeSubDomains"
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 Header always set Vary Accept-Encoding
 Header always set X-XSS-Protection "1; mode=block"
 Header always set X-Content-Type-Options "nosniff"
