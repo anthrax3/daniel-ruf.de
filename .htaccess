@@ -3,6 +3,7 @@ Order allow,deny
 </FilesMatch>
 Options -Indexes
 AddType text/cache-manifest appcache
+AddType 'application/pgp-keys' asc
 AddType 'text/html; charset=UTF-8' html
 AddCharset UTF-8 .html
 ErrorDocument 404 https://daniel-ruf.de
