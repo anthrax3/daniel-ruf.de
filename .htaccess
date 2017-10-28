@@ -5,6 +5,7 @@ Options -Indexes
 AddType text/cache-manifest appcache
 AddType 'application/pgp-keys' asc
 AddType 'text/html; charset=UTF-8' html
+AddType image/x-icon .ico
 AddCharset UTF-8 .html
 ErrorDocument 404 https://daniel-ruf.de
 <IfModule mod_rewrite.c>
@@ -27,4 +28,5 @@ Header always set X-Frame-Options "SAMEORIGIN"
 Header always set Content-Security-Policy "script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; object-src 'none'"
 Header always set Cache-Control "no-transform"
 #Header always unset X-Powered-By
+Header always set X-UA-Compatible "ie=edge"
 </IfModule>
